@@ -1,9 +1,9 @@
-/*
-    DEMO STYLE
-*/
+
+
 
 @import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css";
 @import "https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css";
+
 body {
     font-family: 'Poppins', sans-serif;
 
@@ -22,6 +22,12 @@ p {
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+}
+
+
+div.dataTables_wrapper {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 a,
@@ -183,6 +189,17 @@ span {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+#sidebarCollapse
+{
+    background-color: #0c3350;
+    border: 2px solid #0c3350 !important;
+}
+
+#sidebarCollapse:hover
+{
+    background-color: #b4ce66;
+    border: 2px solid white !important;
+}
 
 .wrapper {
     display: flex;
@@ -196,6 +213,7 @@ span {
     color: #fff;
     transition: all 0.3s;
     z-index: 400 !important;
+    overflow: auto !important;
 }
 
 #sidebar.active {
@@ -697,8 +715,85 @@ input[type=checkbox]
   }
 
 
+  /* data table */
 
 
+  div.dataTables_length {
+    float: left;
+    background-color: transparent;
+}
+ 
+div.dataTables_filter {
+    float: right;
+    background-color: transparent;
+}
+ 
+div.dataTables_info {
+    float: left;
+    background-color: transparent;
+}
+ 
+div.dataTables_paginate {
+    float: right;
+    background-color: transparent;
+    color: #020202;
+}
+
+.page-link
+{
+    background-color: var(--varcol1);
+    color: white;
+}
+
+.page-item.active .page-link
+{
+    background-color: #b4ce66 !important;
+}
+
+.page-item.disabled .page-link
+{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+
+
+
+
+ 
+div.dataTables_length,
+div.dataTables_filter,
+div.dataTables_paginate,
+div.dataTables_info {
+    padding: 6px;
+}
+
+.table-flow
+{
+    overflow-x: auto;
+}
+
+.table-head
+{
+    background-color: var(--varcol1);
+    color: white;
+    
+    
+}
+
+.th-head
+{
+    width: 200px;
+}
+
+
+.cont-table
+{
+    padding: 15px 0;
+    background-color: white;
+    border-radius: 5px;
+}
 
 
 
@@ -939,6 +1034,7 @@ input[type=checkbox]
         margin-left: -80px !important;
         position: fixed !important;
         z-index: 400 !important;
+        overflow: auto !important;
     }
     .dropdown-toggle::after {
         top: auto;
@@ -1053,6 +1149,7 @@ input[type=checkbox]
         position: fixed !important;
         z-index: 400 !important;
         height: 100vh;
+        overflow: auto !important;
     }
 
 
@@ -1252,6 +1349,7 @@ input[type=checkbox]
         position: fixed !important;
         z-index: 400 !important;
         height: 100vh;
+        overflow: auto !important;
     }
 
 

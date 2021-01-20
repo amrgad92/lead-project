@@ -1,0 +1,516 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* rgb(152, 152, 173) */
+
+:root {
+    --varcolor: rgb(14, 14, 66);
+    --varsky: rgb(152, 152, 173);
+
+  }
+
+  /* show password */
+
+
+  .field-icon {
+    float: right;
+    top: -25px ;
+    right: 10px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .container{
+    padding-top:50px;
+    margin: auto;
+  }
+
+
+
+
+
+  /* ======= */
+
+.nav-item
+{
+    margin: 0 10px !important;
+    transition: all 0.3s;
+
+}
+
+.nav-item:hover
+{
+    transform: scale(1.1 , 1.1);
+}
+
+.free-trial
+{
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 7px;
+    color: rgba(0, 0, 255, 1);
+    transition: all 0.3s;
+
+}
+
+.free-trial:hover
+{
+    color: white;
+    background-color: yellowgreen;
+    text-decoration: none !important;
+}
+
+
+
+.nav-color
+{
+    background-color: transparent;
+
+}
+
+.btn-color
+{
+    background-color: #0c3350;
+    color: white;
+
+}
+
+.btn-color2
+{
+    color: white;
+    text-decoration: none !important;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+
+}
+
+.btn-color2:hover
+{
+
+    color: white !important;
+    border-bottom: 4px solid white;
+
+}
+
+.parent
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/renewable-solar-installation-western.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.child
+{
+    width: 33%;
+    height: 300px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.wrapper-hat
+{
+
+    margin: auto;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #b4ce66;
+    transition: all 0.5s;
+}
+
+.icon-hat
+{
+    margin-top: 45px;
+    font-size: 50px;
+
+
+}
+
+.parent-icon
+{
+    padding-top: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.parent-icon:hover
+{
+    background-color: #0c3350;
+    color: white;
+}
+
+.parent-icon:hover .wrapper-hat
+{
+    background-color: #b4ce66;
+    color: #0c3350;
+}
+
+
+.background-slide
+{
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/Solar-Panel-Installation-Guide.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/* template sunergy */
+
+
+.parent-slider
+{
+    width: 100%;
+    height: 100vh;
+    text-align: center ;
+}
+
+.address-section
+{
+    background-color: #007cba;
+}
+
+.address
+{
+    color: white;
+}
+
+.address-btn
+{
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s;
+    border-radius: 0px !important;
+}
+
+.address-btn:hover
+{
+    background-color: yellowgreen;
+    border: 2px solid yellowgreen;
+    color: white;
+}
+
+.about
+{
+    padding-top: 80px;
+    color: var(--varcolor);
+}
+
+
+.address-btn2
+{
+    border: 2px solid #007cba;
+    color: #007cba;
+    transition: all 0.3s;
+    border-radius: 0px !important;
+}
+
+.address-btn2:hover
+{
+    background-color: #007cba;
+    border: 2px solid #007cba;
+    color: white;
+}
+
+.offer
+{
+    text-align: center;
+    color: var(--varcolor);
+}
+
+.solar-panel
+{
+    text-align: center;
+    color: var(--varcolor);
+}
+
+.img-fluid
+{
+    width: 120%;
+    height: 100%;
+}
+
+.parent-fluid
+{
+    background-color: #9bc8df;
+
+}
+
+.child-fluid
+{
+    color: white;
+    background-color: rgba(155, 200, 223, 0.7);
+}
+
+.team
+{
+    color: var(--varcolor);   
+}
+
+.solar-img
+{
+    color: var(--varcolor);   
+}
+
+.count h1
+{
+    color: var(--varcolor);
+    font-weight: bolder;
+}
+
+.count h3
+{
+    color: var(--varcolor);
+    font-weight: bolder;
+}
+
+.count p
+{
+    color: var(--varsky);
+    font-weight: bold;
+}
+
+.who
+{
+    color: var(--varcolor);
+}
+
+/* ---------- */
+
+/* .signin
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: rgb(0, 0, 0, 0.8);
+
+} */
+
+/* .sign-content
+{
+    width: 100%;
+} */
+
+.child-content
+{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.btn-google
+{
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+    padding: 14px 12px 0 12px;
+    border: 1px solid rgba(156, 166, 175, 0.2);
+    box-shadow: 0px 2px 2px #cac6c6;
+}
+
+.btn-google:hover
+{
+    box-shadow: 0px 4px 4px #cac6c6;
+}
+
+.btn-face
+{
+    color: white;
+    background-color: #3b5998;
+}
+
+.btn-face:hover
+{
+    background-color: #34518f;
+    color: white;
+}
+
+.btn-face2
+{
+    color: white;
+    background-color: #DB4437;
+}
+
+.btn-face2:hover
+{
+    color: white;
+    background-color: #c93c2f;
+}
+
+
+.line
+{
+    display: inline-block;
+}
+
+.line-style
+{
+    width: 40%;
+    height: 1px;
+    background-color: #9ca6af;
+}
+
+.input-login-style
+{
+    padding: 22px 5px;
+    outline-color: #9ca6af;
+}
+
+.label-login
+{
+    color: #9ca6af;
+    font-size: 18px;
+}
+
+.text-login
+{
+    color: #9ca6af;
+}
+
+.support-login
+{
+    font-size: 20px;
+    color: #9ca6af;
+}
+
+.btn-login
+{
+    background-color: #b4ce66;
+    color: white !important;
+}
+
+.btn-login:hover
+{
+    background-color: #95b900;
+
+}
+
+
+a i
+{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 12px;
+    color: yellowgreen;
+}
+
+p i
+{
+    font-size: 20px;
+    color: yellowgreen;
+}
+
+
+.ul-footer li
+{
+    margin-top: 15px;
+    list-style: none;
+}
+
+
+.input-footer
+{
+    border: none;
+    padding: 7px 47px 7px 7px ;
+    border-bottom: 1px solid yellowgreen;
+    outline: none;
+    background-color: rgb(255, 240, 240);
+}
+
+
+.footer-color
+{
+    background-color: rgb(252, 247, 247);
+}
+
+.footer-head
+{
+    font-weight: bold;
+    color:rgb(252, 247, 247);
+}
+
+i
+{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+i:hover
+{
+    transform: scale(1.2 , 1.2);
+}
+
+
+.address-btn3
+{
+    border: 2px solid yellowgreen;
+    color: yellowgreen;
+    transition: all 0.3s;
+    border-radius: 0px !important;
+}
+
+.address-btn3:hover
+{
+    background-color: yellowgreen;
+    border: 2px solid yellowgreen;
+    color: white;
+}
+
+
+/* ------------------- */
+
+
+
+@media (max-width: 575.98px) {
+
+    .nav-item
+    {
+        margin: 10px 0 !important;
+    }
+
+    .nav-item:hover
+    {
+        transform: scale(1 , 1);
+    }
+
+}
+
+
+
+
+@media (max-width: 767.98px) {
+
+    .nav-item
+    {
+        margin: 10px 0 !important;
+    }
+
+    .nav-item:hover
+    {
+        transform: scale(1 , 1);
+    }
+
+}

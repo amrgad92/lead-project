@@ -195,7 +195,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 
   /* "primary" coloring */
 
-        /*  #95b926   #0c3350  */
+        /*  #b4ce66   #0c3350  */
 
 }
 .fc .fc-button-primary {
@@ -210,18 +210,18 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   
     color: #fff;
     color: var(--fc-button-text-color, #fff);
-    background-color: #95b926;
-    background-color: var(--fc-button-hover-bg-color, #95b926);
+    background-color: #b4ce66;
+    background-color: var(--fc-button-hover-bg-color, #b4ce66);
     border-color: #ffffff;
     border-color: var(--fc-button-hover-border-color, #ffffff);
   }
 .fc .fc-button-primary:disabled { /* not DRY */
     color: #fff;
     color: var(--fc-button-text-color, rgb(255, 255, 255));
-    background-color: #95b926;
+    background-color: #b4ce66;
     background-color: var(--fc-button-bg-color, #0c3350);
-    border-color: #95b926;
-    border-color: var(--fc-button-border-color, #95b926); /* overrides :hover */
+    border-color: #b4ce66;
+    border-color: var(--fc-button-border-color, #b4ce66); /* overrides :hover */
   }
 .fc .fc-button-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
@@ -230,10 +230,10 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   .fc .fc-button-primary:not(:disabled).fc-button-active {
     color: #fff;
     color: var(--fc-button-text-color, #fff);
-    background-color: #95b926;
-    background-color: var(--fc-button-active-bg-color, #95b926);
-    border-color: #95b926;
-    border-color: var(--fc-button-active-border-color, #95b926);
+    background-color: #b4ce66;
+    background-color: var(--fc-button-active-bg-color, #b4ce66);
+    border-color: #b4ce66;
+    border-color: var(--fc-button-active-border-color, #b4ce66);
   }
 .fc .fc-button-primary:not(:disabled):active:focus,
   .fc .fc-button-primary:not(:disabled).fc-button-active:focus {
@@ -265,15 +265,18 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   .fc .fc-button-group > .fc-button:active,
   .fc .fc-button-group > .fc-button.fc-button-active {
     z-index: 1;
+
   }
 .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
     margin-left: -1px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
   }
 .fc-direction-ltr .fc-button-group > .fc-button:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+
   }
 .fc-direction-rtl .fc-button-group > .fc-button:not(:first-child) {
     margin-right: -1px;

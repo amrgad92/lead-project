@@ -1,0 +1,228 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background-color: rgb(223, 221, 221);
+}
+
+.sw-theme-default .toolbar > .btn {
+    color: #fff;
+    background-color: #0c3350;
+    border: 1px solid #17a2b8;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    font-weight: 400;
+}
+
+
+.sw > .nav {
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 222 !important;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pointer {
+    width: 150px;
+    height: 80px;
+    position: relative;
+    background: white;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+  }
+
+  .pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+  }
+
+
+  /* .pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgb(15, 12, 12);
+    border-top: 20px solid red;
+    border-bottom: 20px solid red;
+  } */
+
+
+
+  /* .img-style
+  {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      
+  }
+
+  .card-style
+  {
+      background-color: white;
+      height: 100px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      padding-top: 20px;
+  }
+
+  .waning-parent
+  {
+    position: relative;
+
+  }
+
+  .waning-child
+  {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+  }
+
+  .waning-child i
+  {
+      color: greenyellow;
+  }
+
+  .space
+  {
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+
+
+  .aa {
+    width: 100%;
+    height: 100px;
+    background: #1e90ff;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  } */
+
+
+/* .grand
+{
+
+    height: 1000px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.parent
+{
+    width: 1500px;
+
+}
+
+.card-parent
+{
+
+}
+
+.card
+{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(196, 151, 238);
+    box-shadow:  1px 1px 1px 0px rgb(141, 60, 218, 0.1 );
+}
+
+i
+{
+    cursor: pointer;
+}
+
+.parent-style
+{
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid rgb(196, 151, 238);
+    box-shadow: 3px 3px 3px rgb(196, 151, 238);
+    
+}
+
+.child1-style
+{
+    padding-top: 10px;
+    width: 20%;
+
+}
+
+.child2-style
+{
+    text-align: left;
+    padding-top: 10px;
+    width: 50%;
+
+}
+
+.child3-style
+{
+    padding-top: 10px;
+    width: 20%;
+
+    position: relative;
+}
+
+
+
+.img-style
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.icon-style
+{
+    position: absolute;
+    font-size: 16px;
+    color:greenyellow;
+    bottom: 10px;
+    right: 5px;
+} */
+
+
+.card
+{
+    width: 230px;
+    height: 115px;
+    background-color: tomato;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.display-icon
+{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #edeef1 !important;
+    font-size: 13px;
+}
+
+:root
+{
+    --varcol1: #0e273a;
+    --varcol2: #b4ce66;
+}
+
+
+.cols-style
+{
+    padding-top: 100px;
+}
+
+
+.cols-parent
+{
+    width: 100%;
+    height: 100px;
+    background-color: #edeef1;
+    margin: 20px 0px 20px 0px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    border-radius: 10px;
+    transition: all 0.4s;
+
+}
+
+
+.cols-parent:hover
+{
+    background-color: white;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* active */
+
+/*     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+
+
+.cols-parent a
+{
+    font-size: 30px;
+}
+
+div h4
+{
+    margin-top: 7px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.point i
+{
+    font-size: 40px;
+    transform: rotate(90deg);
+}
+
+p
+{
+    font-size: 20px !important;
+}

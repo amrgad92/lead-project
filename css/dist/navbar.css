@@ -1,19 +1,23 @@
-/*
-    DEMO STYLE
-*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css";
-@import "https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css";
+
+
 body {
     font-family: 'Poppins', sans-serif;
 
-    background-color: #d6dce2 !important;
+    background-color: #edeef1 !important;
     font-size: 13px;
 }
 
 :root
 {
-    --varcol1: #0c3350;
+    --varcol1: #0e273a;
+    --varcol2: #b4ce66;
 }
 
 p {
@@ -22,6 +26,12 @@ p {
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+}
+
+
+div.dataTables_wrapper {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 a,
@@ -111,7 +121,7 @@ span {
 
 .nav-color
 {
-    background-color:#b4ce66 ;
+    background-color: var(--varcol2) ;
 }
 
 
@@ -137,16 +147,7 @@ span {
 
 
 
-.hell
-{
 
-    position: fixed;
-    z-index: 1000;
-    bottom: 0px;
-    width: 43.5%;
-
-
-}
 
 
 
@@ -158,7 +159,7 @@ span {
     position: absolute;
     top: 60px;
     right: 10px;
-    z-index: 500;
+    z-index: 501;
     background-color:white;
     border-radius: 5px;
     display: none;
@@ -183,6 +184,17 @@ span {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+#sidebarCollapse
+{
+    background-color: #0c3350;
+    border: 2px solid #0c3350 !important;
+}
+
+#sidebarCollapse:hover
+{
+    background-color: #b4ce66;
+    border: 2px solid white !important;
+}
 
 .wrapper {
     display: flex;
@@ -196,6 +208,7 @@ span {
     color: #fff;
     transition: all 0.3s;
     z-index: 400 !important;
+    overflow: auto !important;
 }
 
 #sidebar.active {
@@ -362,17 +375,15 @@ a.article:hover {
 
 }
 
-.search2
+.search-output
 {
     background-color: white;
     position: absolute;
-    z-index: 1;
+    z-index: 501;
     width: 100%;
     border: 1px solid rgb(0, 0, 0, 0.3);
     border-radius: 5px;
     display: none;
-
-
 }
 
 .dtails
@@ -387,16 +398,7 @@ a.article:hover {
     width: 50% !important;
 }
 
-.searchbro
-{
-    width: 100% !important;
-    
-}
 
-.blok
-{
-    display: inline-block;
-}
 
 
 
@@ -427,17 +429,7 @@ a.article:hover {
 
 
 
-/* .btnbar-res
-{
 
-    font-size: 12px;
-    width: 19.3%;
-    padding: 7px;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    background-color: #0c3350;
-} */
 
 .meet-nav
 {
@@ -603,80 +595,79 @@ input[type=checkbox]
 }
 
 
-/* .inputw3 {
-    width: 1px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('images/435769-small.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-  }
-  
-  .inputw3:focus {
-    width: 100%;
-  } */
+/* search */
 
-  .parent-logo
+  .search-parent
   {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    position: relative;
-
-  }
-
-
-  .searchtest
-  {
-      width: 40px;
+      width: 0px;
       height: 40px;
       border-radius: 5px;
       background-color: white;
+      display: flex;
+      justify-content: center;
+
+  }
+
+  .search-demo
+  {
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+  }
+
+  .search-child
+  {
+      background-color: white;
+      width: 10%;
+      height: 40px;
       position: relative;
-      transition: width 1s , display 0.5s 2s;
+      border-radius: 5px;
+  }
+
+  .search-child2
+  {
+      width: 0%;
+      height: 40px;
+
+  }
+
+  .search-input
+  {
+      width: 5%;
+      background-color: transparent;
+      border: none;
+      display: none;
 
   }
 
   .search-logo
   {
-      font-size: 16px;
-      position: absolute;
-      top: 10px;
-      left: 10px;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 10px;
       color: #0c3350;
   }
 
-  .search-input
+  #searchclose
   {
-      position: absolute;
-      left: 40px;
-      top: 0px;
-      border: 0.1px solid transparent;
-      width: 91%;
-      height: 40px;
-      display: none;
-      color: black;
-      border: 1px solid rgb(255, 255, 255, 0.1);
+    width: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 40px;
+    display: none;
+    border-radius: 5px;
 
   }
 
 
-  .searchtest:hover .search-input
-  {
-      display: block;
 
-  }
+/* ======== */
 
-  .searchtest:hover
-  {
-      width: 450px;
-  }
+
+
 
   .fix-nav
   {
@@ -684,19 +675,46 @@ input[type=checkbox]
       top: 0;
       right: 0;
       left: 0;
-      z-index: 999;
+      z-index: 500;
   }
 
 
-  .hi
-  {
-      background-color: rgb(0, 0, 0);
-      color: white;
+/* ======== */
 
 
-  }
 
 
+
+
+
+
+/* calendar */
+
+#calendar
+{
+    background-color: white;
+}
+
+/* .kk
+{
+    background-color: #0c3350;
+    border-radius: 5px 5px 0px 0px;
+} */
+
+.color-kk
+{
+    background-color: #b4ce66;
+    color: white;
+    margin-left: 10px;
+    transition: all 0.1s;
+}
+
+.color-kk:hover
+{
+    background-color: var(--varcol1);
+    color: white;
+    border: 1px solid white;
+}
 
 
 
@@ -716,19 +734,165 @@ input[type=checkbox]
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (max-width: 575.98px) { 
+    
+ 
+/* search */
 
-    .searchtest
+.search-parent
+{
+    width: 0px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.search-demo
+{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.search-child
+{
+    background-color: white;
+    width: 10%;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.search-child2
+{
+    width: 0%;
+    height: 40px;
+
+}
+
+.search-input
+{
+    width: 5%;
+    background-color: transparent;
+    border: none;
+    display: none;
+
+}
+
+.search-logo
+{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #0c3350;
+}
+
+#searchclose
+{
+  width: 40px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  height: 40px;
+  display: none;
+  border-radius: 5px;
+
+}
+
+
+
+/* ======== */
+
+
+ }
+
+@media (max-width: 767.98px) {
+
+
+/* search */
+
+.search-parent
+{
+    width: 0px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.search-demo
+{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.search-child
+{
+    background-color: white;
+    width: 10%;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.search-child2
+{
+    width: 0%;
+    height: 40px;
+
+}
+
+.search-input
+{
+    width: 5%;
+    background-color: transparent;
+    border: none;
+    display: none;
+
+}
+
+.search-logo
+{
+    font-size: 20px;
+    padding-top: 10px !important;
+    padding-left: 0px !important;
+    color: #0c3350;
+}
+
+#searchclose
+{
+  width: 40px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  height: 40px;
+  display: none;
+  border-radius: 5px;
+
+}
+
+
+
+/* ======== */
+
+    .btn-calender
     {
-        margin: auto;
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-  
+        margin: 5px 0;
     }
+
+
 
     .fix-nav
     {
@@ -849,7 +1013,7 @@ input[type=checkbox]
         position: absolute;
         top: 40px;
         right: 0px;
-        z-index: 500;
+        z-index: 501;
         background-color:white;
         border-radius: 5px;
         display: none;
@@ -884,11 +1048,7 @@ input[type=checkbox]
     padding: 5px;
 }
 
-    .searchbro
-    {
-        margin: auto;
-        width: 75%;
-    }
+
 
 
 
@@ -930,7 +1090,7 @@ input[type=checkbox]
 
 
 
-
+/* sidebar style */
 
     #sidebar {
         min-width: 80px;
@@ -939,6 +1099,7 @@ input[type=checkbox]
         margin-left: -80px !important;
         position: fixed !important;
         z-index: 400 !important;
+        overflow: auto !important;
     }
     .dropdown-toggle::after {
         top: auto;
@@ -989,19 +1150,79 @@ input[type=checkbox]
 
 /* ================= */
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (max-width: 991.98px) {
 
-    .searchtest
-    {
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-        margin: auto;
-  
-    }
+
+/* search */
+
+.search-parent
+{
+    width: 0px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.search-demo
+{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.search-child
+{
+    background-color: white;
+    width: 10%;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.search-child2
+{
+    width: 0%;
+    height: 40px;
+
+}
+
+.search-input
+{
+    width: 5%;
+    background-color: transparent;
+    border: none;
+    display: none;
+
+}
+
+.search-logo
+{
+    font-size: 20px;
+    padding-top: 10px !important;
+    padding-left: 0px !important;
+    color: #0c3350;
+}
+
+#searchclose
+{
+  width: 40px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  height: 40px;
+  display: none;
+  border-radius: 5px;
+
+}
+
+
+/* ======== */
 
     .fix-nav
     {
@@ -1053,6 +1274,7 @@ input[type=checkbox]
         position: fixed !important;
         z-index: 400 !important;
         height: 100vh;
+        overflow: auto !important;
     }
 
 
@@ -1151,11 +1373,7 @@ input[type=checkbox]
     padding: 5px;
 }
 
-    .searchbro
-    {
-        margin: auto !important;
-        width: 75% !important;
-    }
+
 
 
 
@@ -1196,19 +1414,80 @@ input[type=checkbox]
 }
 
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199.98px) {
 
-    .searchtest
-    {
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-        margin: auto;
-  
-    }
+
+/* search */
+
+.search-parent
+{
+    width: 0px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.search-demo
+{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.search-child
+{
+    background-color: white;
+    width: 10%;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.search-child2
+{
+    width: 0%;
+    height: 40px;
+
+}
+
+.search-input
+{
+    width: 5%;
+    background-color: transparent;
+    border: none;
+    display: none;
+
+}
+
+.search-logo
+{
+    font-size: 20px;
+    padding-top: 10px !important;
+    padding-left: 0px !important;
+    color: #0c3350;
+}
+
+#searchclose
+{
+  width: 40px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  height: 40px;
+  display: none;
+  border-radius: 5px;
+
+}
+
+
+
+/* ======== */
 
     .fix-nav
     {
@@ -1252,6 +1531,7 @@ input[type=checkbox]
         position: fixed !important;
         z-index: 400 !important;
         height: 100vh;
+        overflow: auto !important;
     }
 
 
@@ -1359,11 +1639,7 @@ input[type=checkbox]
 
 
 
-    .searchbro
-    {
-        margin: auto !important;
-        width: 75% !important;
-    }
+
 
     .headlines
     {

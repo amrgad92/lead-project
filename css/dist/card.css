@@ -1,9 +1,7 @@
-/*
-    DEMO STYLE
-*/
 
-@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css";
-@import "https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css";
+
+
+
 body {
     font-family: 'Poppins', sans-serif;
 
@@ -22,6 +20,12 @@ p {
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+}
+
+
+div.dataTables_wrapper {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 a,
@@ -183,6 +187,17 @@ span {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+#sidebarCollapse
+{
+    background-color: #0c3350;
+    border: 2px solid #0c3350 !important;
+}
+
+#sidebarCollapse:hover
+{
+    background-color: #b4ce66;
+    border: 2px solid white !important;
+}
 
 .wrapper {
     display: flex;
@@ -196,6 +211,7 @@ span {
     color: #fff;
     transition: all 0.3s;
     z-index: 400 !important;
+    overflow: auto !important;
 }
 
 #sidebar.active {
@@ -427,17 +443,7 @@ a.article:hover {
 
 
 
-/* .btnbar-res
-{
 
-    font-size: 12px;
-    width: 19.3%;
-    padding: 7px;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    background-color: #0c3350;
-} */
 
 .meet-nav
 {
@@ -603,24 +609,6 @@ input[type=checkbox]
 }
 
 
-/* .inputw3 {
-    width: 1px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('images/435769-small.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-  }
-  
-  .inputw3:focus {
-    width: 100%;
-  } */
 
   .parent-logo
   {
@@ -688,16 +676,149 @@ input[type=checkbox]
   }
 
 
-  .hi
-  {
-      background-color: rgb(0, 0, 0);
-      color: white;
-
-
-  }
 
 
 
+
+
+/* calendar */
+
+/* #calendar
+{
+    background-color: white;
+} */
+
+/* .kk
+{
+    background-color: #0c3350;
+    border-radius: 5px 5px 0px 0px;
+} */
+
+.color-kk
+{
+    background-color: #b4ce66;
+    color: white;
+    margin-left: 10px;
+    transition: all 0.1s;
+}
+
+.color-kk:hover
+{
+    background-color: var(--varcol1);
+    color: white;
+    border: 1px solid white;
+}
+
+
+.grand
+{
+
+    height: 1000px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.parent
+{
+    width: 1500px;
+
+}
+
+.card-parent
+{
+
+}
+
+.card
+{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(196, 151, 238);
+    box-shadow:  1px 1px 1px 0px rgb(141, 60, 218, 0.1 );
+}
+
+i
+{
+    cursor: pointer;
+}
+
+/* .parent-style
+{
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid rgb(196, 151, 238);
+    box-shadow: 3px 3px 3px rgb(196, 151, 238);
+    
+}
+
+.child1-style
+{
+    padding-top: 10px;
+    width: 20%;
+
+}
+
+.child2-style
+{
+    text-align: left;
+    padding-top: 10px;
+    width: 50%;
+
+}
+
+.child3-style
+{
+    padding-top: 10px;
+    width: 20%;
+
+    position: relative;
+}
+
+
+
+.img-style
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.icon-style
+{
+    position: absolute;
+    font-size: 16px;
+    color:greenyellow;
+    bottom: 10px;
+    right: 5px;
+} */
+
+.card-creat
+{
+    background-color: white;
+    height: 120px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(196, 151, 238);
+    box-shadow:  1px 1px 1px 0px rgb(141, 60, 218, 0.1 );
+}
+
+.close i
+{
+    font-size: 16px;
+}
+
+.close
+{
+    width: 100%;
+    text-align: right;
+}
 
 
 
@@ -717,6 +838,11 @@ input[type=checkbox]
 ----------------------------------------------------- */
 
 @media (min-width: 0px) and (max-width: 768px) {
+
+    .btn-calender
+    {
+        margin: 5px 0;
+    }
 
     .searchtest
     {
@@ -939,6 +1065,7 @@ input[type=checkbox]
         margin-left: -80px !important;
         position: fixed !important;
         z-index: 400 !important;
+        overflow: auto !important;
     }
     .dropdown-toggle::after {
         top: auto;
@@ -1053,6 +1180,7 @@ input[type=checkbox]
         position: fixed !important;
         z-index: 400 !important;
         height: 100vh;
+        overflow: auto !important;
     }
 
 
@@ -1252,6 +1380,7 @@ input[type=checkbox]
         position: fixed !important;
         z-index: 400 !important;
         height: 100vh;
+        overflow: auto !important;
     }
 
 
