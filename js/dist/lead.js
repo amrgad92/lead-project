@@ -1,3 +1,125 @@
+let setReminder = document.querySelector('#setReminder');
+let reminder = document.querySelector('#reminder');
+let addTime = document.querySelector('#addTime');
+let beforeReminder = document.querySelector('.beforeReminder');
+let beforeReminder2 = document.querySelector('.beforeReminder2');
+let dateReminder = document.querySelector('.dateReminder');
+let dateReminder2 = document.querySelector('.dateReminder2');
+
+try
+{
+    addTime.addEventListener('click' , function(){
+        if(this.checked == true)
+        {
+            dateReminder.style.display = 'none';
+            dateReminder2.style.display = 'none';
+            beforeReminder.style.display = 'block';
+            beforeReminder2.style.display = 'block';
+        }
+        else
+        {
+            dateReminder.style.display = 'block';
+            dateReminder2.style.display = 'block';
+            beforeReminder.style.display = 'none';
+            beforeReminder2.style.display = 'none';
+        }
+    })
+}
+catch(e)
+{
+    console.log(e);
+}
+
+try
+{
+    setReminder.addEventListener('click' , function(){
+        this.style.display = 'none';
+        reminder.style.display = 'block'; 
+    })
+}
+catch(e)
+{
+    console.log(e);
+}
+
+try{
+    document.addEventListener('DOMContentLoaded', function() {
+
+    
+        var calendartodo = document.getElementById('calendartodo');
+        
+        
+    
+        var calendartodo = new FullCalendar.Calendar(calendartodo, {
+          theme: true,
+          textColor: 'blue',
+          eventColor: 'black',
+          color: 'green',
+          buttonText:{
+              today:'Today',
+              month:'Month',
+              week:'Week',
+              day:'Day'
+          },
+          titleFormat: {
+            year: 'numeric',
+            month: 'long',
+          },
+          headerToolbar: {
+            left: 'prevYear,prev,next,nextYear today',
+            center: 'title',
+            right: 'timeGridDay,timeGridWeek,dayGridMonth',
+          },
+          initialDate: new Date(),
+          initialView: 'timeGridWeek',
+          navLinks: true, // can click day/week names to navigate views
+          businessHours: true, // display business hours
+          editable: true,
+          selectable: true,
+          events: [
+            
+            {
+    
+              title: 'Business Lunch',
+              start: '2020-12-03T13:00:00',
+              end: '2020-12-20',
+              color: '#b4ce66',
+              
+    
+            },
+    
+            // areas where "Meeting" must be dropped
+            {
+              groupId: 'availableForMeeting',
+              start: '2020-12-11T10:00:00',
+              end: '2020-12-11T16:00:00',
+              display: 'background'
+            },
+    
+            // red areas where no events can be dropped
+            {
+              start: '2020-12-24',
+              end: '2020-12-28',
+              overlap: false,
+              display: 'background',
+              color: 'yellow'
+            },
+    
+            
+          ]
+        });
+    
+        calendartodo.render();
+        
+    
+      });
+
+}
+catch(e){
+    console.log(e);
+}
+
+
 try{
 
     $(".toggle-password").click(function() {
@@ -61,6 +183,7 @@ try{
 
         let parent = document.createElement('div');
         parent.classList.add("parent-style");
+       // $("#root").appendChild
         root.appendChild(parent);
         let child1 = document.createElement('div');
         child1.classList.add("child1-style");
@@ -270,6 +393,9 @@ try{
 catch(e){
     console.log(e);
 }
+
+
+
 
 
 

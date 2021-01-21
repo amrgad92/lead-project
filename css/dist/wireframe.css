@@ -3,6 +3,63 @@
 
 /* reports */
 
+
+/* input
+{
+    border-radius: 0px !important;
+}
+
+select
+{
+    border-radius: 0px !important;
+}
+
+select
+{
+    border-radius: 0px !important;
+}
+
+textarea
+{
+    border-radius: 0px !important;
+}
+
+button
+{
+    border-radius: 0px !important;
+} */
+
+#reminder
+{
+    display: none;
+}
+
+
+
+#calendartodo
+{
+    height: 87vh !important;
+}
+
+.testcalend
+{
+    height: 90vh !important;
+}
+
+.beforeReminder
+{
+    display: none;
+}
+
+.beforeReminder2
+{
+    display: none;
+}
+
+
+
+/* =========== */
+
 .slidepage .nav-link
 {
     margin: 10px 0px 10px 0px;
@@ -976,6 +1033,11 @@ input[type=checkbox]
 textarea
 {
     resize: none;
+}
+
+.modal-todo-body
+{
+    height: 600px !important;
 }
 
 
