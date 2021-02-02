@@ -1,3 +1,20 @@
+let searchInput = document.querySelector('.search-input');
+let searchOutput = document.querySelector('.search-output');
+
+searchInput.addEventListener('keyup' , function(){
+    if(searchInput.value != "")
+    {
+        searchOutput.style.display = "block"
+    }else
+    
+    {
+        searchOutput.style.display = "none"
+    }
+
+    
+})
+
+
 let setReminder = document.querySelector('#setReminder');
 let reminder = document.querySelector('#reminder');
 let addTime = document.querySelector('#addTime');
@@ -44,9 +61,8 @@ catch(e)
 
 try{
     document.addEventListener('DOMContentLoaded', function() {
-
     
-        var calendartodo = document.getElementById('calendartodo');
+        var calendartodo = document.querySelector('#calendartodo');
         
         
     
@@ -143,40 +159,40 @@ catch(e)
 
 
 
-let root = document.getElementById('root');
-var box1 = document.getElementById('box1');
-var box2 = document.getElementById('box2');
-var box3 = document.getElementById('box3');
-var box4 = document.getElementById('box4');
-var box5 = document.getElementById('box5');
-var box6 = document.getElementById('box6');
-var box7 = document.getElementById('box7');
-var box8 = document.getElementById('box8');
-var box9 = document.getElementById('box9');
-var box10 = document.getElementById('box10');
-var box11 = document.getElementById('box11');
-var box12 = document.getElementById('box12');
-var box13 = document.getElementById('box13');
-var box14 = document.getElementById('box14');
-var box15 = document.getElementById('box15');
-var box16 = document.getElementById('box16');
+let root = document.querySelector('#root');
+let box1 = document.querySelector('#box1');
+let box2 = document.querySelector('#box2');
+let box3 = document.querySelector('#box3');
+let box4 = document.querySelector('#box4');
+let box5 = document.querySelector('#box5');
+let box6 = document.querySelector('#box6');
+let box7 = document.querySelector('#box7');
+let box8 = document.querySelector('#box8');
+let box9 = document.querySelector('#box9');
+let box10 = document.querySelector('#box10');
+let box11 = document.querySelector('#box11');
+let box12 = document.querySelector('#box12');
+let box13 = document.querySelector('#box13');
+let box14 = document.querySelector('#box14');
+let box15 = document.querySelector('#box15');
+let box16 = document.querySelector('#box16');
 
-var check1 = document.getElementById('check1');
-var check2 = document.getElementById('check2');
-var check3 = document.getElementById('check3');
-var check4 = document.getElementById('check4');
-var check5 = document.getElementById('check5');
-var check6 = document.getElementById('check6');
-var check7 = document.getElementById('check7');
-var check8 = document.getElementById('check8');
-var check9 = document.getElementById('check9');
-var check10 = document.getElementById('check10');
-var check11 = document.getElementById('check11');
-var check12 = document.getElementById('check12');
-var check13 = document.getElementById('check13');
-var check14 = document.getElementById('check14');
-var check15 = document.getElementById('check15');
-var check16 = document.getElementById('check16');
+let check1 = document.querySelector('#check1');
+let check2 = document.querySelector('#check2');
+let check3 = document.querySelector('#check3');
+let check4 = document.querySelector('#check4');
+let check5 = document.querySelector('#check5');
+let check6 = document.querySelector('#check6');
+let check7 = document.querySelector('#check7');
+let check8 = document.querySelector('#check8');
+let check9 = document.querySelector('#check9');
+let check10 = document.querySelector('#check10');
+let check11 = document.querySelector('#check11');
+let check12 = document.querySelector('#check12');
+let check13 = document.querySelector('#check13');
+let check14 = document.querySelector('#check14');
+let check15 = document.querySelector('#check15');
+let check16 = document.querySelector('#check16');
 try{
     function drop() {
 
@@ -243,8 +259,7 @@ catch(e){
 try{
     document.addEventListener('DOMContentLoaded', function() {
 
-    
-        var calendarEl = document.getElementById('calendar');
+        var calendarEl = document.querySelector('#calendar');
         
         
     
@@ -317,11 +332,12 @@ catch(e){
 }
 
 
+// calendarwire
+
 try{
     document.addEventListener('DOMContentLoaded', function() {
 
-    
-        var calendarwire = document.getElementById('calendarwire');
+        var calendarwire = document.querySelector('#calendarwire');
         
         
     
@@ -438,6 +454,9 @@ $(document).ready(function () {
             console.log(e);
         }
 
+
+
+
         try{
          // SmartWizard initialize
         $('#smartwizard').smartWizard({
@@ -477,6 +496,25 @@ $(document).ready(function () {
                console.log(e);
            }
 
+           try{
+            // SmartWizard initialize
+           $('#smartwizardwire').smartWizard({
+               theme: 'dots',
+               transitionEffect: 'slide',
+               transitionSpeed: '400',
+               toolbarSettings: {
+                   toolbarPosition: 'bottom', // none, top, bottom, both
+                   toolbarButtonPosition: 'right', // left, right, center
+                   showNextButton: false, // show/hide a Next button
+                   showPreviousButton: false, // show/hide a Previous button
+                   toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+               },
+           });
+           }
+           catch(e){
+               console.log(e);
+           }
+
         try{
             $('.side-child2').click(function(){
                 $('.side-child').fadeToggle()
@@ -508,18 +546,12 @@ $(document).ready(function () {
         console.log(e);
     }
 
-    // let testh = document.getElementById('testh');
-
-    // testh = window.outerHeight;
 
 
-
-    // let section = document.getElementById('section');
-
-    let newname = document.getElementById('newname');
-    let newnote = document.getElementById('newnote');
-    let closenote = document.getElementById('closenote');
-    let savenote = document.getElementById('savenote');
+    let newname = document.querySelector('#newname');
+    let newnote = document.querySelector('#newnote');
+    let closenote = document.querySelector('#closenote');
+    let savenote = document.querySelector('#savenote');
 
 
     try
@@ -641,8 +673,8 @@ $('#btnscreen').on('click',function() {
 });
 
 
-let input = document.getElementById('input');
-let searchbar = document.getElementById('searchbar');
+let input = document.querySelector('#input');
+let searchbar = document.querySelector('#searchbar');
 
 
 input.addEventListener('keyup' , function(){

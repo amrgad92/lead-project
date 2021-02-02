@@ -111,11 +111,7 @@ span {
     
 }
 
-/* .active
-{
-    background-color: #f8f9fa !important;
-    color: black !important;
-} */
+
 
 
 
@@ -204,6 +200,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
+    min-height: 100vh !important;
     background-color: var(--varcol1);
     color: #fff;
     transition: all 0.3s;
@@ -340,7 +337,6 @@ a.article:hover {
 #content {
     width: 100%;
     padding: 20px;
-    min-height: 100vh;
     transition: all 0.3s;
 }
 
@@ -367,31 +363,9 @@ a.article:hover {
     font-size: 13px;
 }
 
-.searchnav
-{
-    width: 50% !important;
-    margin: auto !important;
-    position: relative;
 
-}
 
-.search-output
-{
-    background-color: white;
-    position: absolute;
-    z-index: 501;
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
-    display: none;
-}
 
-.dtails
-{
-    color: black;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-    padding: 5px;
-}
 
 .form-nav
 {
@@ -597,9 +571,32 @@ input[type=checkbox]
 
 /* search */
 
+.searchnav
+{
+    width: 45% !important;
+    margin: auto !important;
+    position: relative;
+    background-color: #d6dce2;
+
+}
+
+.search-output
+{
+    background-color: white;
+    height: 200px;
+    position: absolute;
+    z-index: 501;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: auto;
+    display: none;
+
+}
+
   .search-parent
   {
-      width: 0px;
+      width: 100%;
       height: 40px;
       border-radius: 5px;
       background-color: white;
@@ -611,15 +608,13 @@ input[type=checkbox]
   .search-demo
   {
       background-color: white;
-      width: 40px;
-      height: 40px;
       border-radius: 5px;
   }
 
   .search-child
   {
       background-color: white;
-      width: 10%;
+      width: 8%;
       height: 40px;
       position: relative;
       border-radius: 5px;
@@ -627,18 +622,14 @@ input[type=checkbox]
 
   .search-child2
   {
-      width: 0%;
+      width: 92%;
       height: 40px;
-
   }
 
   .search-input
   {
-      width: 5%;
       background-color: transparent;
       border: none;
-      display: none;
-
   }
 
   .search-logo
@@ -649,18 +640,17 @@ input[type=checkbox]
       color: #0c3350;
   }
 
-  #searchclose
-  {
-    width: 40px;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    background-color: white;
-    height: 40px;
-    display: none;
-    border-radius: 5px;
 
-  }
+  .dtails
+{
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+
+
+
 
 
 
@@ -695,11 +685,7 @@ input[type=checkbox]
     background-color: white;
 }
 
-/* .kk
-{
-    background-color: #0c3350;
-    border-radius: 5px 5px 0px 0px;
-} */
+
 
 .color-kk
 {
@@ -719,17 +705,6 @@ input[type=checkbox]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -739,9 +714,19 @@ input[type=checkbox]
  
 /* search */
 
+.searchnav
+{
+    width: 50% !important;
+    margin: auto !important;
+    position: relative;
+    background-color: #d6dce2;
+
+}
+
 .search-parent
 {
-    width: 0px;
+    
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     background-color: white;
@@ -754,15 +739,13 @@ input[type=checkbox]
 .search-demo
 {
     background-color: white;
-    width: 40px;
-    height: 40px;
     border-radius: 5px;
 }
 
 .search-child
 {
     background-color: white;
-    width: 10%;
+    width: 15% !important;
     height: 40px;
     position: relative;
     border-radius: 5px;
@@ -770,18 +753,14 @@ input[type=checkbox]
 
 .search-child2
 {
-    width: 0%;
+    width: 85% !important;
     height: 40px;
-
 }
 
 .search-input
 {
-    width: 5%;
     background-color: transparent;
     border: none;
-    display: none;
-
 }
 
 .search-logo
@@ -792,19 +771,27 @@ input[type=checkbox]
     color: #0c3350;
 }
 
-#searchclose
+
+.search-output
 {
-  width: 40px;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background-color: white;
-  height: 40px;
-  display: none;
-  border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    height: 200px;
+    overflow: auto;
+    z-index: 501;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
 
 }
 
+
+.dtails
+{
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 5px;
+}
 
 
 /* ======== */
@@ -817,9 +804,18 @@ input[type=checkbox]
 
 /* search */
 
+.searchnav
+{
+    width: 50% !important;
+    margin: auto !important;
+    position: relative;
+    background-color: #d6dce2;
+
+}
+
 .search-parent
 {
-    width: 0px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     background-color: white;
@@ -832,15 +828,13 @@ input[type=checkbox]
 .search-demo
 {
     background-color: white;
-    width: 40px;
-    height: 40px;
     border-radius: 5px;
 }
 
 .search-child
 {
     background-color: white;
-    width: 10%;
+    width: 15% !important;
     height: 40px;
     position: relative;
     border-radius: 5px;
@@ -848,46 +842,49 @@ input[type=checkbox]
 
 .search-child2
 {
-    width: 0%;
+    width: 85% !important;
     height: 40px;
-
 }
 
 .search-input
 {
-    width: 5%;
     background-color: transparent;
     border: none;
-    display: none;
-
 }
 
 .search-logo
 {
     font-size: 20px;
-    padding-top: 10px !important;
-    padding-left: 0px !important;
+    padding-top: 10px;
+    padding-left: 10px;
     color: #0c3350;
 }
 
-#searchclose
+.search-output
 {
-  width: 40px;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background-color: white;
-  height: 40px;
-  display: none;
-  border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    height: 200px;
+    overflow: auto;
+    z-index: 501;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
 
 }
 
+.dtails
+{
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 5px;
+}
 
 
 /* ======== */
 
-    .btn-calender
+
+.btn-calender
     {
         margin: 5px 0;
     }
@@ -938,11 +935,6 @@ input[type=checkbox]
 
 
 
-    /* section2
-    {
-        margin-top: 500px !important;
-        padding-top: 0px !important;
-    } */
 
 
 
@@ -1021,32 +1013,10 @@ input[type=checkbox]
 
 
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px;
-    }
 
-    .search2
-{
-    background-color: white;
-    text-align: left;
-    left: 0px;
-    width: 75%;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
 
-}
 
-.dtails
-{
-    color: black;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-    padding: 5px;
-}
+
 
 
 
@@ -1095,6 +1065,7 @@ input[type=checkbox]
     #sidebar {
         min-width: 80px;
         max-width: 80px;
+        min-height: 100vh !important;
         text-align: center;
         margin-left: -80px !important;
         position: fixed !important;
@@ -1155,9 +1126,18 @@ input[type=checkbox]
 
 /* search */
 
+.searchnav
+{
+    width: 50% !important;
+    margin: auto !important;
+    position: relative;
+    background-color: #d6dce2;
+
+}
+
 .search-parent
 {
-    width: 0px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     background-color: white;
@@ -1170,8 +1150,6 @@ input[type=checkbox]
 .search-demo
 {
     background-color: white;
-    width: 40px;
-    height: 40px;
     border-radius: 5px;
 }
 
@@ -1186,43 +1164,47 @@ input[type=checkbox]
 
 .search-child2
 {
-    width: 0%;
+    width: 90%;
     height: 40px;
-
 }
 
 .search-input
 {
-    width: 5%;
     background-color: transparent;
     border: none;
-    display: none;
-
 }
 
 .search-logo
 {
     font-size: 20px;
-    padding-top: 10px !important;
-    padding-left: 0px !important;
+    padding-top: 10px;
+    padding-left: 10px;
     color: #0c3350;
 }
 
-#searchclose
+.search-output
 {
-  width: 40px;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background-color: white;
-  height: 40px;
-  display: none;
-  border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    height: 200px;
+    overflow: auto;
+    z-index: 501;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
 
+}
+
+.dtails
+{
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 5px;
 }
 
 
 /* ======== */
+
 
     .fix-nav
     {
@@ -1273,7 +1255,7 @@ input[type=checkbox]
 
         position: fixed !important;
         z-index: 400 !important;
-        height: 100vh;
+        min-height: 100vh !important;
         overflow: auto !important;
     }
 
@@ -1345,12 +1327,7 @@ input[type=checkbox]
         display: none;
     }
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px !important;
-        text-align: center !important;
-    }
+
 
     .search2
     {
@@ -1419,9 +1396,18 @@ input[type=checkbox]
 
 /* search */
 
+.searchnav
+{
+    width: 50% !important;
+    margin: auto !important;
+    position: relative;
+    background-color: #d6dce2;
+
+}
+
 .search-parent
 {
-    width: 0px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     background-color: white;
@@ -1434,15 +1420,13 @@ input[type=checkbox]
 .search-demo
 {
     background-color: white;
-    width: 40px;
-    height: 40px;
     border-radius: 5px;
 }
 
 .search-child
 {
     background-color: white;
-    width: 10%;
+    width: 8%;
     height: 40px;
     position: relative;
     border-radius: 5px;
@@ -1450,42 +1434,44 @@ input[type=checkbox]
 
 .search-child2
 {
-    width: 0%;
+    width: 92%;
     height: 40px;
-
 }
 
 .search-input
 {
-    width: 5%;
     background-color: transparent;
     border: none;
-    display: none;
-
 }
 
 .search-logo
 {
     font-size: 20px;
-    padding-top: 10px !important;
-    padding-left: 0px !important;
+    padding-top: 10px;
+    padding-left: 10px;
     color: #0c3350;
 }
 
-#searchclose
+.search-output
 {
-  width: 40px;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background-color: white;
-  height: 40px;
-  display: none;
-  border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    height: 200px;
+    overflow: auto;
+    z-index: 501;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
 
 }
 
 
+.dtails
+{
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 5px;
+}
 
 /* ======== */
 
@@ -1530,7 +1516,7 @@ input[type=checkbox]
 
         position: fixed !important;
         z-index: 400 !important;
-        height: 100vh;
+        height: 100vh !important;
         overflow: auto !important;
     }
 
@@ -1609,12 +1595,7 @@ input[type=checkbox]
 
 
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px !important;
-        text-align: center !important;
-    }
+
 
     .search2
     {

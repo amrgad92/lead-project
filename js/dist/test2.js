@@ -1,68 +1,17 @@
 
 
 
-$(document).ready(function(){
-
-
-    // $('#example').DataTable( {
-
-
-    //     columnDefs: [ {
-    //         orderable: false,
-    //         className: 'select-checkbox',
-    //         targets:   0
-    //     } ],
-    //     select: {
-    //         style:    'os',
-    //         selector: 'td:first-child'
-    //     },
-    //     order: [[ 1, 'asc' ]]
-    // } );
-
-
-        $('table.display').DataTable({
-                
-        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-        
+try
+{
+    $('#example4').DataTable({
+        "scrollX": true,
+        "scrollY": 200
         });
-
-
-
-
-
-
-
-
-  });
-
-
-
-
-
-
-
-
-
-
-
-let searchInput = document.querySelector('.search-input');
-let searchOutput = document.querySelector('.search-output');
-
-searchInput.addEventListener('keyup' , function(){
-    if(searchInput.value != "")
-    {
-        searchOutput.style.display = "block"
-    }else
-    
-    {
-        searchOutput.style.display = "none"
-    }
-
-    
-});
-
-
-
+}
+catch(e)
+{
+    console.log(e);
+}
 
 
 

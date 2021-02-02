@@ -207,6 +207,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
+    min-height: 100vh !important;
     background-color: var(--varcol1);
     color: #fff;
     transition: all 0.3s;
@@ -343,7 +344,6 @@ a.article:hover {
 #content {
     width: 100%;
     padding: 20px;
-    min-height: 100vh;
     transition: all 0.3s;
 }
 
@@ -370,26 +370,8 @@ a.article:hover {
     font-size: 13px;
 }
 
-.searchnav
-{
-    width: 50% !important;
-    margin: auto !important;
-    position: relative;
-
-}
-
-.search2
-{
-    background-color: white;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
-    display: none;
 
 
-}
 
 .dtails
 {
@@ -403,11 +385,7 @@ a.article:hover {
     width: 50% !important;
 }
 
-.searchbro
-{
-    width: 100% !important;
-    
-}
+
 
 .blok
 {
@@ -620,51 +598,9 @@ input[type=checkbox]
   }
 
 
-  .searchtest
-  {
-      width: 40px;
-      height: 40px;
-      border-radius: 5px;
-      background-color: white;
-      position: relative;
-      transition: width 1s , display 0.5s 2s;
-
-  }
-
-  .search-logo
-  {
-      font-size: 16px;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      color: #0c3350;
-  }
-
-  .search-input
-  {
-      position: absolute;
-      left: 40px;
-      top: 0px;
-      border: 0.1px solid transparent;
-      width: 91%;
-      height: 40px;
-      display: none;
-      color: black;
-      border: 1px solid rgb(255, 255, 255, 0.1);
-
-  }
 
 
-  .searchtest:hover .search-input
-  {
-      display: block;
 
-  }
-
-  .searchtest:hover
-  {
-      width: 450px;
-  }
 
   .fix-nav
   {
@@ -844,17 +780,7 @@ i
         margin: 5px 0;
     }
 
-    .searchtest
-    {
-        margin: auto;
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-  
-    }
+
 
     .fix-nav
     {
@@ -983,38 +909,7 @@ i
 
 
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px;
-    }
 
-    .search2
-{
-    background-color: white;
-    text-align: left;
-    left: 0px;
-    width: 75%;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
-
-}
-
-.dtails
-{
-    color: black;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-    padding: 5px;
-}
-
-    .searchbro
-    {
-        margin: auto;
-        width: 75%;
-    }
 
 
 
@@ -1061,6 +956,7 @@ i
     #sidebar {
         min-width: 80px;
         max-width: 80px;
+        min-height: 100vh !important;
         text-align: center;
         margin-left: -80px !important;
         position: fixed !important;
@@ -1118,17 +1014,7 @@ i
 
 @media (min-width: 769px) and (max-width: 991px) {
 
-    .searchtest
-    {
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-        margin: auto;
-  
-    }
+
 
     .fix-nav
     {
@@ -1179,8 +1065,8 @@ i
 
         position: fixed !important;
         z-index: 400 !important;
-        height: 100vh;
         overflow: auto !important;
+        min-height: 100vh !important;
     }
 
 
@@ -1251,26 +1137,7 @@ i
         display: none;
     }
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px !important;
-        text-align: center !important;
-    }
 
-    .search2
-    {
-        background-color: white;
-        text-align: left;
-        left: 12.5%;
-        width: 75%;
-        position: absolute;
-        z-index: 1;
-        border: 1px solid rgb(0, 0, 0, 0.3);
-        border-radius: 5px;
-
-
-    }
 
     .dtails
 {
@@ -1279,11 +1146,6 @@ i
     padding: 5px;
 }
 
-    .searchbro
-    {
-        margin: auto !important;
-        width: 75% !important;
-    }
 
 
 
@@ -1326,17 +1188,7 @@ i
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    .searchtest
-    {
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-        margin: auto;
-  
-    }
+
 
     .fix-nav
     {
@@ -1379,8 +1231,8 @@ i
 
         position: fixed !important;
         z-index: 400 !important;
-        height: 100vh;
         overflow: auto !important;
+        min-height: 100vh !important;
     }
 
 
@@ -1458,26 +1310,7 @@ i
 
 
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px !important;
-        text-align: center !important;
-    }
 
-    .search2
-    {
-        background-color: white;
-        text-align: left;
-        left: 12.5%;
-        width: 75%;
-        position: absolute;
-        z-index: 1;
-        border: 1px solid rgb(0, 0, 0, 0.3);
-        border-radius: 5px;
-
-
-    }
 
     .dtails
 {
@@ -1488,11 +1321,6 @@ i
 
 
 
-    .searchbro
-    {
-        margin: auto !important;
-        width: 75% !important;
-    }
 
     .headlines
     {

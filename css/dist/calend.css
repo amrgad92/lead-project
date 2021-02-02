@@ -343,7 +343,6 @@ a.article:hover {
 #content {
     width: 100%;
     padding: 20px;
-    min-height: 100vh;
     transition: all 0.3s;
 }
 
@@ -370,26 +369,9 @@ a.article:hover {
     font-size: 13px;
 }
 
-.searchnav
-{
-    width: 50% !important;
-    margin: auto !important;
-    position: relative;
-
-}
-
-.search2
-{
-    background-color: white;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
-    display: none;
 
 
-}
+
 
 .dtails
 {
@@ -403,11 +385,7 @@ a.article:hover {
     width: 50% !important;
 }
 
-.searchbro
-{
-    width: 100% !important;
-    
-}
+
 
 .blok
 {
@@ -620,51 +598,11 @@ input[type=checkbox]
   }
 
 
-  .searchtest
-  {
-      width: 40px;
-      height: 40px;
-      border-radius: 5px;
-      background-color: white;
-      position: relative;
-      transition: width 1s , display 0.5s 2s;
-
-  }
-
-  .search-logo
-  {
-      font-size: 16px;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      color: #0c3350;
-  }
-
-  .search-input
-  {
-      position: absolute;
-      left: 40px;
-      top: 0px;
-      border: 0.1px solid transparent;
-      width: 91%;
-      height: 40px;
-      display: none;
-      color: black;
-      border: 1px solid rgb(255, 255, 255, 0.1);
-
-  }
 
 
-  .searchtest:hover .search-input
-  {
-      display: block;
 
-  }
 
-  .searchtest:hover
-  {
-      width: 450px;
-  }
+
 
   .fix-nav
   {
@@ -711,6 +649,90 @@ input[type=checkbox]
 
 
 
+/* search */
+
+.searchnav
+{
+    width: 45% !important;
+    margin: auto !important;
+    position: relative;
+    background-color: #d6dce2;
+
+}
+
+.search-output
+{
+    background-color: white;
+    height: 200px;
+    position: absolute;
+    z-index: 501;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: auto;
+    display: none;
+
+}
+
+  .search-parent
+  {
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+
+  }
+
+  .search-demo
+  {
+      background-color: white;
+      border-radius: 5px;
+  }
+
+  .search-child
+  {
+      background-color: white;
+      width: 8%;
+      height: 40px;
+      position: relative;
+      border-radius: 5px;
+  }
+
+  .search-child2
+  {
+      width: 92%;
+      height: 40px;
+  }
+
+  .search-input
+  {
+      background-color: transparent;
+      border: none;
+  }
+
+  .search-logo
+  {
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 10px;
+      color: #0c3350;
+  }
+
+
+
+
+  .dtails
+{
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 2px;
+}
+
+
+/* ======== */
+
 
 
 
@@ -727,24 +749,104 @@ input[type=checkbox]
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (max-width: 575.98px) { 
+    
+ 
+    /* search */
+    
+    .searchnav
+    {
+        width: 50% !important;
+        margin: auto !important;
+        position: relative;
+        background-color: #d6dce2;
+    
+    }
+    
+    .search-parent
+    {
+        
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    
+    }
+    
+    .search-demo
+    {
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    .search-child
+    {
+        background-color: white;
+        width: 15% !important;
+        height: 40px;
+        position: relative;
+        border-radius: 5px;
+    }
+    
+    .search-child2
+    {
+        width: 85% !important;
+        height: 40px;
+    }
+    
+    .search-input
+    {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .search-logo
+    {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        color: #0c3350;
+    }
+    
+    
+    .search-output
+    {
+        background-color: white;
+        position: absolute;
+        height: 200px;
+        overflow: auto;
+        z-index: 501;
+        width: 100%;
+        border: 1px solid rgb(0, 0, 0, 0.3);
+        border-radius: 5px;
+    
+    }
+    
+    
+    .dtails
+    {
+        color: black;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+        padding: 5px;
+    }
+    
+    
+    /* ======== */
+    
+    
+     }
+
+@media (max-width: 767.98px) {
 
     .btn-calender
     {
         margin: 5px 0;
     }
 
-    .searchtest
-    {
-        margin: auto;
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-  
-    }
+
 
     .fix-nav
     {
@@ -873,38 +975,6 @@ input[type=checkbox]
 
 
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px;
-    }
-
-    .search2
-{
-    background-color: white;
-    text-align: left;
-    left: 0px;
-    width: 75%;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
-
-}
-
-.dtails
-{
-    color: black;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-    padding: 5px;
-}
-
-    .searchbro
-    {
-        margin: auto;
-        width: 75%;
-    }
 
 
 
@@ -951,6 +1021,7 @@ input[type=checkbox]
     #sidebar {
         min-width: 80px;
         max-width: 80px;
+        min-height: 100vh !important;
         text-align: center;
         margin-left: -80px !important;
         position: fixed !important;
@@ -1006,19 +1077,9 @@ input[type=checkbox]
 
 /* ================= */
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (max-width: 991.98px) {
 
-    .searchtest
-    {
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-        margin: auto;
-  
-    }
+
 
     .fix-nav
     {
@@ -1069,8 +1130,8 @@ input[type=checkbox]
 
         position: fixed !important;
         z-index: 400 !important;
-        height: 100vh;
         overflow: auto !important;
+        min-height: 100vh !important;
     }
 
 
@@ -1141,39 +1202,8 @@ input[type=checkbox]
         display: none;
     }
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px !important;
-        text-align: center !important;
-    }
-
-    .search2
-    {
-        background-color: white;
-        text-align: left;
-        left: 12.5%;
-        width: 75%;
-        position: absolute;
-        z-index: 1;
-        border: 1px solid rgb(0, 0, 0, 0.3);
-        border-radius: 5px;
 
 
-    }
-
-    .dtails
-{
-    color: black;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-    padding: 5px;
-}
-
-    .searchbro
-    {
-        margin: auto !important;
-        width: 75% !important;
-    }
 
 
 
@@ -1214,19 +1244,9 @@ input[type=checkbox]
 }
 
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199.98px) {
 
-    .searchtest
-    {
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        transition: width 1s , display 0.5s 2s;
-        margin: auto;
-  
-    }
+
 
     .fix-nav
     {
@@ -1269,8 +1289,8 @@ input[type=checkbox]
 
         position: fixed !important;
         z-index: 400 !important;
-        height: 100vh;
         overflow: auto !important;
+        min-height: 100vh !important;
     }
 
 
@@ -1348,41 +1368,7 @@ input[type=checkbox]
 
 
 
-    .searchnav
-    {
-        width: 100% !important;
-        padding: 10px 0px 10px 0px !important;
-        text-align: center !important;
-    }
 
-    .search2
-    {
-        background-color: white;
-        text-align: left;
-        left: 12.5%;
-        width: 75%;
-        position: absolute;
-        z-index: 1;
-        border: 1px solid rgb(0, 0, 0, 0.3);
-        border-radius: 5px;
-
-
-    }
-
-    .dtails
-{
-    color: black;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-    padding: 5px;
-}
-
-
-
-    .searchbro
-    {
-        margin: auto !important;
-        width: 75% !important;
-    }
 
     .headlines
     {
