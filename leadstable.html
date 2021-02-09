@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>leadGuarntrn</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/datatables.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dist/leadstable.css">
+
+    <!-- Font Awesome JS -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body id="test">
+
+
+
+    <nav class="navbar navbar-expand-xl navbar-light nav-color text-white fix-nav nav-res">
+        <div class="sidebar-header text-center">
+            <button  type="button" id="sidebarCollapse" class="border-0 btn">
+                <i style="color: white;" class="fas fa-align-left"></i>
+            </button>
+        </div>
+        <a  class="navbar-brand logo-res " href="#"><img src="" alt=""> <span class="ml-3"> <img  style="width: 120px;" src="css/images/Logo3.jpeg" alt=""></span> </a>
+        <button class="navbar-toggler d-xl-none " type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            <div class="searchnav ">
+
+                <div  class="search-parent">
+                    
+                    <div class="search-child" >
+    
+                        <div  class="search-demo">
+                            <i  class="fa fa-search search-logo" aria-hidden="true"></i>
+                        </div>
+
+
+                    </div>
+
+                    <div class="search-child2">
+                        <input  class="form-control search-input" type="text">
+                    </div>
+                </div>
+
+
+                <div id="searchbar" class="search-output">
+                    <p class="dtails">hello</p>
+                    <p class="dtails">hello</p>
+                    <p class="dtails">hello</p>
+                    <p class="dtails">hello</p>
+                    <p class="dtails">hello</p>
+                    <p class="dtails">hello</p>
+                    <p class="dtails">hello</p>
+                    <p class="dtails">hello</p>
+                    <p class="dtails">hello</p>
+                </div>
+            </div>
+
+
+
+
+            <ul class="navbar-nav ml-auto mt-2 mt-xl-0 underline-res">
+
+                <!-- <li style="background-color: #b4ce66 !important;" class="nav-item active mr-2 headlines">
+                    <button id="colorbtn"  class="btn text-white  color-btn2"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </li> -->
+
+
+
+                <li style="background-color: #b4ce66 !important;" class="nav-item active  headlines">
+                    <button data-toggle="modal" data-target="#exampleModal"  class="btn color-btn2 text-white" href=""><i class="fas fa-user"></i> New Lead</button>
+                </li>
+
+
+                <li style="background-color: #b4ce66 !important;" class="nav-item active  ml-2 headlines">
+                    <button  id="btnscreen" class="btn color-btn2 text-white"><i class="fas fa-expand-arrows-alt"></i></button>
+                </li>
+
+                <li style="background-color: #b4ce66 !important;" class="nav-item  active ml-2 headlines ken-parent">
+                    <button id="ken" class="btn btn-light  text-dark" href=""><i class="far fa-user-circle"></i> Kendall Holliday</button>
+                    <div id="admin" >
+                        
+                        <p class="pl-2 admin-child"><i class="fas fa-sign-out-alt mr-1"></i> Log out</p>
+                        <p class="pl-2 admin-child"> <i class="fas fa-check-circle mr-1"></i> Online</p>
+                        <p style="border-bottom: transparent !important;"  class="pl-2 admin-child"> <i class="fa fa-plus mr-1" aria-hidden="true"></i> Add account</p>
+                    
+                    </div>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+
+    <div  class="wrapper mt-5 pt-4">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="">
+
+
+
+            <ul class="list-unstyled components ">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <div  class="container">
+                <div  class="row ">
+
+                    <div class=" w-100 bg-white">
+                        <p style="font-size: 50px; color: #000; font-family: 'Times New Roman', Times, serif;" class="text-center">Leads</p>
+                    </div>
+
+                    <div style="overflow: auto;"  class="col-xl-12 cont-table">
+
+
+                            <table style="width: 200%; height: 500px !important;"   id="example" class="table table-striped table-bordered text-center " >
+                                <div >
+                                    <thead  class=" table-head">
+                                        <tr  class="th-head">
+                                            <th >ID</th>
+                                            <th>Lead Name</th>
+                                            <th>Address</th>
+                                            <th>Quote State</th>
+                                            <th>Quote Type</th>
+                                            <th>Utility Provider</th>
+                                            <th>Annual Consumption</th>
+                                            <th>Annual Increase %</th>
+                                            <th>Installation Type</th>
+                                            <th>Inverter Name</th>
+                                            <th>Panel</th>
+                                            <th>Utility Provider</th>
+                                            <th>Base PPW</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody  >
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Tiger Nixon</td>
+                                        </tr>
+    
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Lead Name</th>
+                                            <th>Address</th>
+                                            <th>Quote State</th>
+                                            <th>Quote Type</th>
+                                            <th>Utility Provider</th>
+                                            <th>Annual Consumption</th>
+                                            <th>Annual Increase %</th>
+                                            <th>Installation Type</th>
+                                            <th>Inverter Name</th>
+                                            <th>Panel</th>
+                                            <th>Utility Provider</th>
+                                            <th>Base PPW</th>
+                                        </tr>
+                                    </tfoot>
+                                </div>
+                            </table>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <!-- div content -->
+
+        </div>
+    </div>
+
+
+
+
+
+<!-- ======= -->
+
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Lead</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+
+            <div class="container" >
+                <div class="row">
+                    
+                    <div class="col-xl-12">
+                        <div class="row">
+                            <div class="col-xl-6">
+    
+    
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="">First Name</label>
+                                        <input class="form-control w-100" type="text">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Last Name</label>
+                                        <input class="form-control w-100" type="text">
+                                    </div>
+                                </div>
+            
+                                <label class="mt-2" for="">Email Address</label>
+                                <input class="form-control" type="email" >
+            
+                                <label class="mt-2" for="">Address Line 1</label>
+                                <input class="form-control w-100" type="text">
+            
+                                <label class="mt-2" for="">Address Line 2</label>
+                                <input class="form-control w-100" type="text">
+            
+                                <div class="row mt-2">
+                                    <div class="col-md-5">
+                                        <label for="">City</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="">State</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="">Zip Code</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+            
+                            </div>
+            
+            
+                            <div class="col-xl-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Household Account</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                    </select>
+                                  </div>
+            
+                                  <div style="padding-top: 35px; padding-bottom: 4px;" class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-check form-check-inline">
+                                            <input  class="form-check-input " type="checkbox" checked id="inlineCheckbox1" value="option1">
+                                            <label style="font-size: 10px; " class="form-check-label" for="inlineCheckbox1">Active client</label>
+                                          </div>
+                
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" checked id="inlineCheckbox2" value="option2">
+                                            <label style="font-size: 10px;" class="form-check-label" for="inlineCheckbox2">Access to client console</label>
+                                          </div>
+                
+                                          <div  class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" checked id="inlineCheckbox2" value="option2">
+                                            <label style="font-size: 10px; " class="form-check-label" for="inlineCheckbox2">Do Not Contact</label>
+                                          </div>
+                                    </div>
+                                  </div>
+        
+                                  <label class="mt-2" for="">Mobile Number</label>
+                                  <input class="form-control" type="number">
+        
+                                  <label class="mt-2" for="">Home Number</label>
+                                  <input class="form-control" type="number">
+        
+                                  <label class="mt-2" for="">Office Number</label>
+                                  <input class="form-control" type="number">
+        
+                                  <label class="mt-2" for="">Fax Number</label>
+                                  <input class="form-control" type="number">
+        
+        
+        
+        
+                            </div>
+                        </div>
+
+                        <div style="border-top: 1px solid rgb(0, 0, 0, 0.1);" class="row mt-3 pt-2">
+                            <div class="col-xl-4">
+                                <label for="">Company Name</label>
+                                <input class="form-control w-100" type="text">
+                            </div>
+                            <div class="col-xl-4">
+                                <label for="">Title</label>
+                                <input class="form-control w-100" type="text">
+                            </div>
+                            <div class="col-xl-4">
+                                <label for="">Website</label>
+                                <input class="form-control w-100" type="text">
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-xl-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Lead Source</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Facebook</option>
+                                      <option>internet search</option>
+                                      <option>Referral</option>
+                                    </select>
+                                  </div>
+
+
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Sales person</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+
+
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Lead set by</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Zap smith</option>
+                                    </select>
+                                  </div>
+
+
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                        <label for="">Est. Lead Value</label>
+                                        <div class="input-group w-100">
+                                            <div class="input-group-prepend">
+                                              <div class="input-group-text">$</div>
+                                            </div>
+                                            <input type="number" class="form-control" id="inlineFormInputGroup" >
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="">Close Probability</label>
+                                        <div class="input-group w-100">
+                                            <input type="number" class="form-control" id="inlineFormInputGroup" >
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">%</div>
+                                              </div>
+                                        </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group mt-3">
+                                    <label for="exampleFormControlSelect1">Best way to contact</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Mobile phone</option>
+                                      <option>Home phone</option>
+                                      <option>Office phone</option>
+                                      <option>Mobile phone</option>
+                                      <option>Mobile phone</option>
+                                      <option>Mobile phone</option>
+                                      <option>Text</option>
+                                      <option>Email</option>
+                                      <option>Facebook</option>
+                                      <option>Twitter</option>
+                                      <option>Instant message</option>
+                                    </select>
+                                  </div>
+
+
+                            </div>
+
+
+                            <div class="col-xl-6">
+
+
+                                <div class="form-group">
+                                    
+                                    <label for="exampleFormControlSelect1">Lead status</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Lead Received</option>
+                                      <option>Appointment Not Set</option>
+                                      <option>Appointment Set</option>
+                                      <option>Appointment Canceled</option>
+                                      <option>Appointment Run</option>
+                                      <option>Lead Lost</option>
+                                      <option>Sale in porgress</option>
+                                      <option>Sale Lost</option>
+                                      <option>Job Sold</option>
+                                      <option>Job Sold & canceled</option>
+                                      <option>Job in progress</option>
+                                      <option>Customer</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Interested in</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Roofing</option>
+                                      <option>Solar</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Class</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Commercial</option>
+                                      <option>Residential</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Best time to contact</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Anytime</option>
+                                      <option>Morning</option>
+                                      <option>Early Morning</option>
+                                      <option>Late Morning</option>
+                                      <option>Afternoon</option>
+                                      <option>Early Afternoon</option>
+                                      <option>Late Afternoon</option>
+                                      <option>Evening</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Building Type</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Apartment</option>
+                                      <option>Attached</option>
+                                      <option>Co-Op</option>
+                                      <option>Condo</option>
+                                      <option>Office</option>
+                                      <option>Semi attached</option>
+                                      <option>Single Family</option>
+                                      <option>TownHouse</option>
+                                    </select>
+                                  </div>
+                            
+                            
+                                </div>
+                        
+                        
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <label for="">Notes</label>
+                                <textarea style="resize: none;" class="form-control w-100" name="" id="" cols="12" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn color-btn2"> <i class="far fa-save"></i> Save </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- Popper.JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hxlOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datatables.js"></script>
+    <script src="js/dist/lead.js"></script>
+</body>
+
+</html>
+
+

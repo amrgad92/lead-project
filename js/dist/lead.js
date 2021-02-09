@@ -357,9 +357,9 @@ try{
             month: 'long',
           },
           headerToolbar: {
-            left: 'prevYear,prev,next,nextYear today',
-            center: 'title',
-            right: 'timeGridDay',
+            right: 'prevYear,prev,next,nextYear today',
+            left: 'title',
+            // right: 'timeGridDay',
           },
           initialDate: new Date(),
           initialView: 'timeGridDay',
@@ -416,6 +416,37 @@ catch(e){
 
 
 $(document).ready(function () {
+
+    try
+    {
+        new WOW().init();
+    }
+    catch(e)
+    {
+        console.log(e);
+    }
+
+    $(function() {  
+        $("body").niceScroll({
+            cursorcolor: "#b4ce66",
+        });
+
+        $(".tableBodyScroll").niceScroll({
+            cursorcolor: "#b4ce66",
+            cursorfixedheight: 40
+        });
+
+        $(".num-parent").niceScroll({
+            cursorcolor: "#b4ce66",
+            cursorfixedheight: 40
+        });
+
+        $(".num-head").niceScroll({
+            cursorcolor: "#b4ce66",
+            cursorfixedheight: 40
+        });
+
+    });
 
         try{
             $("#example-basic").steps({
@@ -633,8 +664,16 @@ $(document).ready(function () {
 
     });
 
-
-
+    var elem = document.getElementById("myframe");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
     
 
 
@@ -907,6 +946,29 @@ box16.addEventListener( 'click', function(){
     }
 
 })
+
+
+
+try{
+    let searchInput = document.querySelector('.search-input');
+let searchOutput = document.querySelector('.search-output');
+
+searchInput.addEventListener('keyup' , function(){
+    if(searchInput.value != "")
+    {
+        searchOutput.style.display = "block"
+    }else
+    
+    {
+        searchOutput.style.display = "none"
+    }
+
+    
+});
+}
+catch(e){
+    console.log(e);
+}
 
 
 
