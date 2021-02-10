@@ -91,6 +91,7 @@
 
 
 
+
                 <li style="background-color: #b4ce66 !important;" class="nav-item active  headlines">
                     <button data-toggle="modal" data-target="#exampleModal"  class="btn color-btn2 text-white" href=""><i class="fas fa-user"></i> New Lead</button>
                 </li>
@@ -100,9 +101,9 @@
                 </li>
 
 
-                <li style="background-color: #b4ce66 !important;" class="nav-item active  ml-2 headlines">
-                    <button  id="btnscreen" class="btn color-btn2 text-white"><i class="fas fa-bell"></i></button>
-                    
+                <li style="background-color: #b4ce66 !important;" class="nav-item active  ml-2 li-badge headlines">
+                    <button  id="noti" class="btn color-btn2 text-white"><i class="fas fa-bell"></i></button>
+                    <p class="badge badge-danger">5</p>
                     
                      <div class="notification">
                         <div class="noti-icon">
@@ -137,7 +138,7 @@
                                     <div class="noti-content-p">
                                         <div class="noti-content-p2">
                                             <h6>jean steven</h6>
-                                            <p>Lorem ipsum dolor sit amet dolor</p>
+                                            <p>Lorem ipsum dolor sit</p>
                                             <div class="noti-content-dot">
                                                 <i class="fas fa-ellipsis-h"></i>
                                             </div>
@@ -164,7 +165,7 @@
                                     <div class="noti-content-p">
                                         <div class="noti-content-p2">
                                             <h6>jean steven</h6>
-                                            <p>Lorem ipsum dolor sit amet dolor</p>
+                                            <p>Lorem ipsum dolor sit </p>
                                             <div class="noti-content-dot">
                                                 <i class="fas fa-ellipsis-h"></i>
                                             </div>
@@ -191,7 +192,7 @@
                                     <div class="noti-content-p">
                                         <div class="noti-content-p2">
                                             <h6>jean steven</h6>
-                                            <p>Lorem ipsum dolor sit amet dolor</p>
+                                            <p>Lorem ipsum dolor sit </p>
                                             <div class="noti-content-dot">
                                                 <i class="fas fa-ellipsis-h"></i>
                                             </div>
@@ -217,7 +218,7 @@
                                     <div class="noti-content-p">
                                         <div class="noti-content-p2">
                                             <h6>jean steven</h6>
-                                            <p>Lorem ipsum dolor sit amet dolor</p>
+                                            <p>Lorem ipsum dolor sit </p>
                                             <div class="noti-content-dot">
                                                 <i class="fas fa-ellipsis-h"></i>
                                             </div>
@@ -240,6 +241,15 @@
 
 
                 </li>
+
+                <li style="background-color: #b4ce66 !important;" class="nav-item active  ml-2 li-badge headlines">
+                    <button   class="btn btn-light color-btn3 noti2"><i style="font-size: 16px; " class="fas fa-envelope"></i></button>
+                    <p class="badge badge-danger">5</p>
+
+
+                </li>
+
+
 
                 <li style="background-color: #b4ce66 !important;" class="nav-item  active ml-2 headlines ken-parent">
                     <button id="ken" class="btn btn-light  text-dark" href=""><i class="far fa-user-circle"></i> Kendall Holliday</button>
@@ -339,12 +349,21 @@
                             <p class="  first-p" > <span><i class="fas fa-user"></i></span> <span class="wow slideInLeft" data-wow-duration="1s" >Welcome Chad</span> </p>
                             <p> <i class="fas fa-calendar-alt"></i> <span class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">Date Today: 9-2-2021</span> <br> <span> <i class="fas fa-clock"></i> <span class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="2s">Time Now: 8:45 pm</span> </span></p>
                         </div>
-                        <div style="animation: linear;" class="text-center top-head-child2">
-                            <p    class=" last-p  wow wobble" data-wow-duration="1s" data-wow-delay="3s">Sales page</p>
+                        <div  class="text-center top-head-child2 w-100 ">
 
-                            <p  class=" last-p  wow wobble" data-wow-duration="1s" data-wow-delay="4s">Sales page2</p>
+                            <div id="breaking-news-container">
+                                <div id="breaking-news-colour" class="slideup animated">
+                                  
+                                </div>  
+                                 <span class="breaking-news-title delay-animated slidein">
+                                    <span class="test-skew">BREAKING</span>
+                                  </span> 
+                                  <a class="breaking-news-headline delay-animated2 fadein marquee">
+                                    Franco Sold a new Deal!!! - Jay did not do anything constructive today!!! - Chad is the best ever!
+                                </a>  
+                              </div>
 
-                            <p   class=" last-p  wow wobble" data-wow-duration="1s" data-wow-delay="5s">Sales page3</p>
+
                             
                         </div>
                     </div>
@@ -367,7 +386,7 @@
                                     </div>
                                     <div class="num-head" >
         
-                                        <h1 class="num-child " >8</h1>
+                                        <h1 id="counter1" class="num-child" >0</h1>
         
                                         <div  class="text-right pt-3 px-1">
                                             <a href="table - Copy (7).html"   class="btn btn-sm moreinfo-btn">Achievement</a>
@@ -387,7 +406,7 @@
                                     </div>
                                     <div class="num-head" >
         
-                                        <p class="num-royal" >$3,245</p>
+                                        <p  class="num-royal" >$ <span id="counter2">0</span></p>
         
         
                                         <div class="text-right px-2 pb-1">
@@ -404,12 +423,12 @@
                                     <div  class="card-header  py-2 px-3 text-color check" >
                                         <span class="">
         
-                                            Recruiter
+                                            Recruits
                                         </span>
                                     </div>
                                     <div class="num-head" >
                                         <div >
-                                            <h1 class="num-child" >8</h1>
+                                            <h1 id="counter3" class="num-child " >0</h1>
         
                                             <div  class="text-right pt-3 px-1">
                                                 <a href="table - Copy (7).html"   class="btn btn-sm moreinfo-btn">My team</a>
@@ -520,26 +539,30 @@
                                                                             <thead   class="text-white ">
                                                                                 <tr>
                                                                                     <th scope="col-sm-4">Name</th>
+                                                                                    <th scope="col-sm-8">Address</th>
+                                                                                    <th scope="col-sm-8">Project</th>
                                                                                     <th scope="col-sm-8">Status</th>
-                                                                                    <th scope="col-sm-8">projects</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody >
                                                                                 <tr>
-                                                                                    <td>jay</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>Jay Brazil</td>
+                                                                                    <td>7253 Asian Ave., Van Nuys, CA, 91307</td>
+                                                                                    <td>Solar</td>
+                                                                                    <td>Quote</td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Rodolfo</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>Rodolfo Pacillas</td>
+                                                                                    <td>7253 Asian Ave., Van Nuys, CA, 91307</td>
+                                                                                    <td>Home Improvement</td>
+                                                                                    <td>Contract Sent</td>
                                                                                 </tr>
         
                                                                                 <tr>
                                                                                     <td>Franco</td>
-                                                                                    <td>Permitting and Planning</td>
+                                                                                    <td>7253 Asian Ave., Van Nuys, CA, 91307</td>
+                                                                                    <td>projects</td>
                                                                                     <td>projects</td>
                                                                                 </tr>
                                                                             </tbody>
@@ -614,28 +637,36 @@
                                                                         <table  class="table text-center border-table">
                                                                             <thead   class="text-white ">
                                                                                 <tr>
-                                                                                    <th scope="col-sm-4">Name</th>
                                                                                     <th scope="col-sm-8">Status</th>
-                                                                                    <th scope="col-sm-8">projects</th>
+                                                                                    <th>Task information</th>
+                                                                                    <th scope="col-sm-8"><i class="fas fa-ellipsis-h"></i></th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody >
                                                                                 <tr>
-                                                                                    <td>jay</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td><input type="checkbox" name="" id=""></td>
+                                                                                    <td class="text-left task-td"> <a href=""><span>Venancio Vasquez - TaskWed,</span></a> 
+                                                                                        <br> <span>We need to get paid its been nearly a year </span>
+                                                                                        <br> Assigned To: <a href=""><span> Erik Cortes (inactive) </span></a>, <a href=""><span>Jay Brazil</span></a></td>
+                                                                                    <td><i class="fas fa-ellipsis-h"></i></td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Rodolfo</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td><input type="checkbox" name="" id=""></td>
+                                                                                    <td class="text-left task-td"> <a href=""><span>Venancio Vasquez - TaskWed,</span></a> 
+                                                                                        <br> <span>We must pick up the panels from Avi Kobi house. sitting on the side of the house </span>
+                                                                                        <br> Assigned To: <a href=""><span> Erik Cortes (inactive) </span></a>, <a href=""><span>Jay Brazil</span></a></td>
+                                                                                    <td><i class="fas fa-ellipsis-h"></i></td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Franco</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td><input type="checkbox" name="" id=""></td>
+                                                                                    <td class="text-left task-td"> <a href=""><span>Venancio Vasquez - TaskWed,</span></a> 
+                                                                                        <br> <span>Call Nadine to learn how to input other customers with solar edge product so we can view and monitor.
+
+                                                                                        </span>
+                                                                                        <br> Assigned To: <a href=""><span> Erik Cortes (inactive) </span></a>, <a href=""><span>Jay Brazil</span></a></td>
+                                                                                    <td><i class="fas fa-ellipsis-h"></i></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -711,27 +742,27 @@
                                                                             <thead   class="text-white ">
                                                                                 <tr>
                                                                                     <th scope="col-sm-4">Name</th>
+                                                                                    <th scope="col-sm-8">Project</th>
                                                                                     <th scope="col-sm-8">Status</th>
-                                                                                    <th scope="col-sm-8">projects</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody >
                                                                                 <tr>
-                                                                                    <td>jay</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>Mark Castillo</td>
+                                                                                    <td>Solar</td>
+                                                                                    <td>Sent</td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Rodolfo</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>Rodolfo Pacillas</td>
+                                                                                    <td>Roofing</td>
+                                                                                    <td>Generated</td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Franco</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>Franco Mardigrale</td>
+                                                                                    <td>Playstation</td>
+                                                                                    <td>Generated</td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -874,27 +905,27 @@
                                                                             <thead   class="text-white ">
                                                                                 <tr>
                                                                                     <th scope="col-sm-4">Name</th>
+                                                                                    <th scope="col-sm-8">Project</th>
                                                                                     <th scope="col-sm-8">Status</th>
-                                                                                    <th scope="col-sm-8">projects</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody >
                                                                                 <tr>
-                                                                                    <td>jay</td>
+                                                                                    <td>Jay Brazil</td>
+                                                                                    <td>Solar</td>
                                                                                     <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Rodolfo</td>
+                                                                                    <td>Rodolfo Castillo</td>
+                                                                                    <td>Solar</td>
                                                                                     <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Franco</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>Franco Madrigale</td>
+                                                                                    <td>Home Improvement</td>
+                                                                                    <td>Installation</td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -932,7 +963,7 @@
                                         <div id="funsix" class="card-header  py-2 px-3 text-color check" >
                                             <span class="">
                                                 <i class="fas fa-briefcase"></i>
-                                                Challanges
+                                                Challenges
                                             </span>
                                             <span style="cursor: pointer;">
                                                 <i class="fas fa-window-minimize"></i>
@@ -968,28 +999,32 @@
                                                                         <table  class="table text-center border-table">
                                                                             <thead   class="text-white ">
                                                                                 <tr>
-                                                                                    <th scope="col-sm-4">Name</th>
-                                                                                    <th scope="col-sm-8">Status</th>
-                                                                                    <th scope="col-sm-8">projects</th>
+                                                                                    <th scope="col-sm-4">Points</th>
+                                                                                    <th scope="col-sm-8">Amount</th>
+                                                                                    <th scope="col-sm-8">Recruit/Sale</th>
+                                                                                    <th scope="col-sm-8">Date</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody >
                                                                                 <tr>
-                                                                                    <td>jay</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>2000</td>
+                                                                                    <td>$54,230.00</td>
+                                                                                    <td>Own Deal</td>
+                                                                                    <td>02/10/2021</td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Rodolfo</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>4000</td>
+                                                                                    <td>$54,230.00</td>
+                                                                                    <td>Chad</td>
+                                                                                    <td>02/09/2021</td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Franco</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>2000</td>
+                                                                                    <td>$54,230.00</td>
+                                                                                    <td>Own Deal</td>
+                                                                                    <td>02/10/2021</td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -1063,28 +1098,28 @@
                                                                         <table  class="table text-center border-table">
                                                                             <thead   class="text-white ">
                                                                                 <tr>
-                                                                                    <th scope="col-sm-4">Name</th>
-                                                                                    <th scope="col-sm-8">Status</th>
-                                                                                    <th scope="col-sm-8">projects</th>
+                                                                                    <th scope="col-sm-4">Training</th>
+                                                                                    <th scope="col-sm-8">Start Date</th>
+                                                                                    <th scope="col-sm-8">Join</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody >
                                                                                 <tr>
-                                                                                    <td>jay</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>Solar</td>
+                                                                                    <td>02/02/2021</td>
+                                                                                    <td><input type="checkbox" name="Join" id=""></td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Rodolfo</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td>Home Improvement</td>
+                                                                                    <td>02/03/2021</td>
+                                                                                    <td><input type="checkbox" name="Join" id=""></td>
                                                                                 </tr>
         
                                                                                 <tr>
-                                                                                    <td>Franco</td>
-                                                                                    <td>Permitting and Planning</td>
-                                                                                    <td>projects</td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>

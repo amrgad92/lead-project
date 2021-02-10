@@ -1,3 +1,18 @@
+// function myFunction() {
+//     setTimeout(function(){ alert("Hello"); }, 3000);
+//   }
+
+//   myFunction();
+
+
+$('#noti').click(function(){
+    $('.notification').fadeToggle()
+});
+
+$('.noti2').click(function(){
+    $('.notification').fadeToggle()
+});
+
 let searchInput = document.querySelector('.search-input');
 let searchOutput = document.querySelector('.search-output');
 
@@ -664,7 +679,60 @@ $(document).ready(function () {
 
     });
 
-    var elem = document.getElementById("myframe");
+    let counter1 = 0;
+
+    function countnum()
+    {
+        counter1++;
+        if(counter1 == 8)
+        {
+            clearInterval(counterone)
+        }
+        document.querySelector('#counter1').innerHTML = counter1;
+    }
+
+    let counterone = setInterval(countnum , 50);
+
+
+
+
+    let counter2 = 0;
+
+    function countnum2()
+    {
+        counter2+=200;
+        if(counter2 == 42000)
+        {
+            clearInterval(countertwo)
+        }
+        document.querySelector('#counter2').innerHTML = counter2;
+    }
+
+    let countertwo = setInterval(countnum2 , 1);
+
+
+    
+
+    let counter3 = 0;
+
+    function countnum3()
+    {
+        counter3++;
+        if(counter3 == 8)
+        {
+            clearInterval(counterthree)
+        }
+        document.querySelector('#counter3').innerHTML = counter3;
+    }
+
+    let counterthree = setInterval(countnum3 , 50);
+
+
+
+
+
+
+    var elem = document.querySelector("#myframe");
     function openFullscreen() {
       if (elem.requestFullscreen) {
         elem.requestFullscreen();
