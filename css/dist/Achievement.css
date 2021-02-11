@@ -8,8 +8,7 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif;
-
+    font-family: 'Times New Roman', Times, serif;
     background-color: #edeef1 !important;
     font-size: 13px;
 }
@@ -697,6 +696,99 @@ input[type=checkbox]
     border: 1px solid white;
 }
 
+
+.head-wire
+{
+    background-color: transparent;
+    border-radius: 5px;
+
+}
+
+
+
+.head-wire p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+.video-header
+{
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255 , 0.5);
+    border-radius: 3px;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+
+.parent-bomb
+{
+    width: 83%;
+    margin: auto;
+    background-color: rgb(255, 255, 255 , 0.5);
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.child-bomb
+{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: all 0.2s;
+}
+
+.child-bomb:hover
+{
+    transform: scale(1.1 , 1.1);
+}
+
+.child-bomb p
+{
+
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--varcol1);
+
+}
+
+
+.new-p
+{
+    font-size: 15px !important;
+    margin-top: 12px;
+}
+
+.sale-p
+{
+    margin-left: 7px;
+    font-size: 30px !important;
+}
+
+.achev-head
+{
+    font-size: 80px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 3px;
+}
+
+.achev-head p
+{
+    font-size: 60px;
+}
 
 
 

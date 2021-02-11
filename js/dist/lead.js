@@ -9,9 +9,7 @@ $('#noti').click(function(){
     $('.notification').fadeToggle()
 });
 
-$('.noti2').click(function(){
-    $('.notification').fadeToggle()
-});
+
 
 let searchInput = document.querySelector('.search-input');
 let searchOutput = document.querySelector('.search-output');

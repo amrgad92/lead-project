@@ -899,10 +899,10 @@ table
 
   .notification
   {
-      width: 30%;
+      width: 350px;
       height: 500px;
       position: absolute;
-      right: 100px;
+      right: -150px;
       background-color: white;
       border-radius: 10px;
       display: none;
@@ -1408,6 +1408,12 @@ table
       z-index: 6;
 
   }
+
+  .time-head
+  {
+    font-style: italic;
+     font-size: 12px;
+  }
   
   
     
@@ -1423,7 +1429,7 @@ table
 
 
       /* notification */
-
+/* 
   .notification
   {
       width: 75% !important;
@@ -1595,7 +1601,7 @@ table
   .noti-content-child2:hover .noti-content-dot
   {
       display: block;
-  }
+  } */
 
   /* ============= */
 
@@ -1719,7 +1725,7 @@ table
 
     
       /* notification */
-
+/* 
   .notification
   {
       width: 75%;
@@ -1891,7 +1897,7 @@ table
   .noti-content-child2:hover .noti-content-dot
   {
       display: block;
-  }
+  } */
 
   /* ============= */
 
@@ -2200,6 +2206,7 @@ table
 
   /* notification */
 
+/*   
   .notification
   {
       width: 40%;
@@ -2371,7 +2378,7 @@ table
   .noti-content-child2:hover .noti-content-dot
   {
       display: block;
-  }
+  } */
 
   /* ============= */
 
