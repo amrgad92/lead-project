@@ -8,7 +8,7 @@
 
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif !important;
     background-color: #edeef1 !important;
     font-size: 14px;
 }
@@ -1416,7 +1416,15 @@ table
   }
   
   
-    
+    td a
+    {
+        color: blueviolet;
+    }
+
+    td a:hover
+    {
+        color: blueviolet;
+    }
 
 
 

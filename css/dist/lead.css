@@ -845,6 +845,11 @@ input[type=checkbox]
     padding: 5px;
 }
 
+.table-res
+{
+    overflow: auto !important;
+}
+
 
 
 /* ======== */
@@ -1222,7 +1227,7 @@ input[type=checkbox]
 
     .table-res
     {
-        overflow-x: auto;
+        overflow: auto !important;
     }
 
 
@@ -1517,7 +1522,7 @@ input[type=checkbox]
 
     .table-res
     {
-        overflow-x: auto;
+        overflow: auto !important;
     }
 
 
@@ -1757,7 +1762,7 @@ input[type=checkbox]
 
     .table-res
     {
-        overflow-x: auto;
+        overflow: auto !important;
     }
 
 

@@ -1,5 +1,44 @@
 
+try{
+    function drop() {
 
+
+        let parent = document.createElement('div');
+        parent.classList.add("parent-style");
+       // $("#root").appendChild
+        root.appendChild(parent);
+        let child1 = document.createElement('div');
+        child1.classList.add("child1-style");
+        parent.appendChild(child1);
+    
+        let child2 = document.createElement('div');
+        child2.classList.add("child2-style");
+        parent.appendChild(child2);
+    
+        let child3 = document.createElement('div');
+        child3.classList.add("child3-style");
+        parent.appendChild(child3);
+    
+        let imgcard = document.createElement('img');
+        child1.appendChild(imgcard);
+        imgcard.src = "css/images/Trefoil_Festival_Bag_Black_EI7411_01_standard.jpg";
+        imgcard.classList.add("img-style");
+        let head = document.createElement('h6');
+        head.innerHTML = "hello";
+        child2.appendChild(head);
+        let para = document.createElement('p');
+        para.innerHTML = "amr";
+        child2.appendChild(para);
+        let icon = document.createElement('i');
+        icon.classList.add("fas", "fa-exclamation-triangle", "icon-style")
+        child3.appendChild(icon);
+    
+    }
+}
+catch(e)
+{
+    console.log(e);
+}
 
 $(document).ready(function(){
 
