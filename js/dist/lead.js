@@ -1,30 +1,17 @@
-// function myFunction() {
-//     setTimeout(function(){ alert("Hello"); }, 3000);
-//   }
-
-//   myFunction();
-
-
-$('#noti').click(function(){
+$('#noti').click(function () {
     $('.notification').fadeToggle()
 });
+$(".search-input").on('keyup', function () {
+    if (this.value != "") {
+        $(".search-output").each(function () {
+            this.style.display = "block";
+        });
 
-
-
-let searchInput = document.querySelector('.search-input');
-let searchOutput = document.querySelector('.search-output');
-
-searchInput.addEventListener('keyup' , function(){
-    if(searchInput.value != "")
-    {
-        searchOutput.style.display = "block"
-    }else
-    
-    {
-        searchOutput.style.display = "none"
+    } else {
+        $(".search-output").each(function () {
+            this.style.display = "none";
+        });
     }
-
-    
 })
 
 
@@ -36,18 +23,15 @@ let beforeReminder2 = document.querySelector('.beforeReminder2');
 let dateReminder = document.querySelector('.dateReminder');
 let dateReminder2 = document.querySelector('.dateReminder2');
 
-try
-{
-    addTime.addEventListener('click' , function(){
-        if(this.checked == true)
-        {
+try {
+    addTime.addEventListener('click', function () {
+        if (this.checked == true) {
             dateReminder.style.display = 'none';
             dateReminder2.style.display = 'none';
             beforeReminder.style.display = 'block';
             beforeReminder2.style.display = 'block';
         }
-        else
-        {
+        else {
             dateReminder.style.display = 'block';
             dateReminder2.style.display = 'block';
             beforeReminder.style.display = 'none';
@@ -55,117 +39,113 @@ try
         }
     })
 }
-catch(e)
-{
+catch (e) {
     console.log(e);
 }
 
-try
-{
-    setReminder.addEventListener('click' , function(){
+try {
+    setReminder.addEventListener('click', function () {
         this.style.display = 'none';
-        reminder.style.display = 'block'; 
+        reminder.style.display = 'block';
     })
 }
-catch(e)
-{
+catch (e) {
     console.log(e);
 }
 
-try{
-    document.addEventListener('DOMContentLoaded', function() {
-    
+try {
+    document.addEventListener('DOMContentLoaded', function () {
+
         var calendartodo = document.querySelector('#calendartodo');
-        
-        
-    
+
+
+
         var calendartodo = new FullCalendar.Calendar(calendartodo, {
-          theme: true,
-          textColor: 'blue',
-          eventColor: 'black',
-          color: 'green',
-          buttonText:{
-              today:'Today',
-              month:'Month',
-              week:'Week',
-              day:'Day'
-          },
-          titleFormat: {
-            year: 'numeric',
-            month: 'long',
-          },
-          headerToolbar: {
-            left: 'prevYear,prev,next,nextYear today',
-            center: 'title',
-            right: 'timeGridDay,timeGridWeek,dayGridMonth',
-          },
-          initialDate: new Date(),
-          initialView: 'timeGridWeek',
-          navLinks: true, // can click day/week names to navigate views
-          businessHours: true, // display business hours
-          editable: true,
-          selectable: true,
-          events: [
-            
-            {
-    
-              title: 'Business Lunch',
-              start: '2020-12-03T13:00:00',
-              end: '2020-12-20',
-              color: '#b4ce66',
-              
-    
+            theme: true,
+            textColor: 'blue',
+            eventColor: 'black',
+            color: 'green',
+            buttonText: {
+                today: 'Today',
+                month: 'Month',
+                week: 'Week',
+                day: 'Day'
             },
-    
-            // areas where "Meeting" must be dropped
-            {
-              groupId: 'availableForMeeting',
-              start: '2020-12-11T10:00:00',
-              end: '2020-12-11T16:00:00',
-              display: 'background'
+            titleFormat: {
+                year: 'numeric',
+                month: 'long',
             },
-    
-            // red areas where no events can be dropped
-            {
-              start: '2020-12-24',
-              end: '2020-12-28',
-              overlap: false,
-              display: 'background',
-              color: 'yellow'
+            headerToolbar: {
+                left: 'prevYear,prev,next,nextYear today',
+                center: 'title',
+                right: 'timeGridDay,timeGridWeek,dayGridMonth',
             },
-    
-            
-          ]
+            initialDate: new Date(),
+            initialView: 'timeGridWeek',
+            navLinks: true, // can click day/week names to navigate views
+            businessHours: true, // display business hours
+            editable: true,
+            selectable: true,
+            events: [
+
+                {
+
+                    title: 'Business Lunch',
+                    start: '2020-12-03T13:00:00',
+                    end: '2020-12-20',
+                    color: '#b4ce66',
+
+
+                },
+
+                // areas where "Meeting" must be dropped
+                {
+                    groupId: 'availableForMeeting',
+                    start: '2020-12-11T10:00:00',
+                    end: '2020-12-11T16:00:00',
+                    display: 'background'
+                },
+
+                // red areas where no events can be dropped
+                {
+                    start: '2020-12-24',
+                    end: '2020-12-28',
+                    overlap: false,
+                    display: 'background',
+                    color: 'yellow'
+                },
+
+
+            ]
         });
-    
+
         calendartodo.render();
-        
-    
-      });
+
+
+    });
 
 }
-catch(e){
+catch (e) {
     console.log(e);
 }
 
 
-try{
+try {
 
-    $(".toggle-password").click(function() {
+    $(".toggle-password").click(function () {
 
         $(this).toggleClass("fa-eye fa-eye-slash");
         var input = $($(this).attr("toggle"));
         if (input.attr("type") == "password") {
-          input.attr("type", "text");
+            input.attr("type", "text");
         } else {
-          input.attr("type", "password");
+            input.attr("type", "password");
         }
-      });
+    });
 
 }
 
-catch(e)
-{
+catch (e) {
     console.log(e);
 }
 
@@ -206,26 +186,26 @@ let check13 = document.querySelector('#check13');
 let check14 = document.querySelector('#check14');
 let check15 = document.querySelector('#check15');
 let check16 = document.querySelector('#check16');
-try{
+try {
     function drop() {
 
 
         let parent = document.createElement('div');
         parent.classList.add("parent-style");
-       // $("#root").appendChild
+        // $("#root").appendChild
         root.appendChild(parent);
         let child1 = document.createElement('div');
         child1.classList.add("child1-style");
         parent.appendChild(child1);
-    
+
         let child2 = document.createElement('div');
         child2.classList.add("child2-style");
         parent.appendChild(child2);
-    
+
         let child3 = document.createElement('div');
         child3.classList.add("child3-style");
         parent.appendChild(child3);
-    
+
         let imgcard = document.createElement('img');
         child1.appendChild(imgcard);
         imgcard.src = "css/images/Trefoil_Festival_Bag_Black_EI7411_01_standard.jpg";
@@ -239,187 +219,184 @@ try{
         let icon = document.createElement('i');
         icon.classList.add("fas", "fa-exclamation-triangle", "icon-style")
         child3.appendChild(icon);
-    
+
     }
 }
-catch(e)
-{
+catch (e) {
     console.log(e);
 }
 
-try{
+try {
     let address = $("#addressp").offset().top;
-    $(window).scroll(function(){
+    $(window).scroll(function () {
 
         let top = $(window).scrollTop();
-        
-        if( top > address )
-        {
-            $(".navbar").css({"backgroundColor":"#007cba"} );
-        
+
+        if (top > address) {
+            $(".navbar").css({ "backgroundColor": "#007cba" });
+
         }
-        else
-        {
-                $(".navbar").css({"backgroundColor":"transparent"} );
-        
+        else {
+            $(".navbar").css({ "backgroundColor": "transparent" });
+
         }
-        });
+    });
 }
-catch(e){
+catch (e) {
     console.log(e);
 }
 
-try{
-    document.addEventListener('DOMContentLoaded', function() {
+try {
+    document.addEventListener('DOMContentLoaded', function () {
 
         var calendarEl = document.querySelector('#calendar');
-        
-        
-    
+
+
+
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          theme: true,
-          textColor: 'blue',
-          eventColor: 'black',
-          color: 'green',
-          buttonText:{
-              today:'Today',
-              month:'Month',
-              week:'Week',
-              day:'Day'
-          },
-          titleFormat: {
-            year: 'numeric',
-            month: 'long',
-          },
-          headerToolbar: {
-            left: 'prevYear,prev,next,nextYear today',
-            center: 'title',
-            right: 'timeGridDay,timeGridWeek,dayGridMonth',
-          },
-          initialDate: new Date(),
-          navLinks: true, // can click day/week names to navigate views
-          businessHours: true, // display business hours
-          editable: true,
-          selectable: true,
-          events: [
-            
-            {
-    
-              title: 'Business Lunch',
-              start: '2020-12-03T13:00:00',
-              end: '2020-12-20',
-              color: '#b4ce66',
-              
-    
+            theme: true,
+            textColor: 'blue',
+            eventColor: 'black',
+            color: 'green',
+            buttonText: {
+                today: 'Today',
+                month: 'Month',
+                week: 'Week',
+                day: 'Day'
             },
-    
-            // areas where "Meeting" must be dropped
-            {
-              groupId: 'availableForMeeting',
-              start: '2020-12-11T10:00:00',
-              end: '2020-12-11T16:00:00',
-              display: 'background'
+            titleFormat: {
+                year: 'numeric',
+                month: 'long',
             },
-    
-            // red areas where no events can be dropped
-            {
-              start: '2020-12-24',
-              end: '2020-12-28',
-              overlap: false,
-              display: 'background',
-              color: 'yellow'
+            headerToolbar: {
+                left: 'prevYear,prev,next,nextYear today',
+                center: 'title',
+                right: 'timeGridDay,timeGridWeek,dayGridMonth',
             },
-    
-            
-          ]
+            initialDate: new Date(),
+            navLinks: true, // can click day/week names to navigate views
+            businessHours: true, // display business hours
+            editable: true,
+            selectable: true,
+            events: [
+
+                {
+
+                    title: 'Business Lunch',
+                    start: '2020-12-03T13:00:00',
+                    end: '2020-12-20',
+                    color: '#b4ce66',
+
+
+                },
+
+                // areas where "Meeting" must be dropped
+                {
+                    groupId: 'availableForMeeting',
+                    start: '2020-12-11T10:00:00',
+                    end: '2020-12-11T16:00:00',
+                    display: 'background'
+                },
+
+                // red areas where no events can be dropped
+                {
+                    start: '2020-12-24',
+                    end: '2020-12-28',
+                    overlap: false,
+                    display: 'background',
+                    color: 'yellow'
+                },
+
+
+            ]
         });
-    
+
         calendar.render();
-        
-    
-      });
+
+
+    });
 
 }
-catch(e){
+catch (e) {
     console.log(e);
 }
 
 
 // calendarwire
 
-try{
-    document.addEventListener('DOMContentLoaded', function() {
+try {
+    document.addEventListener('DOMContentLoaded', function () {
 
         var calendarwire = document.querySelector('#calendarwire');
-        
-        
-    
+
+
+
         var calendarwire = new FullCalendar.Calendar(calendarwire, {
-          theme: true,
-          textColor: 'blue',
-          eventColor: 'black',
-          color: 'green',
-          buttonText:{
-              today:'Today',
-              month:'Month',
-              week:'Week',
-              day:'Day'
-          },
-          titleFormat: {
-            year: 'numeric',
-            month: 'long',
-          },
-          headerToolbar: {
-            right: 'prevYear,prev,next,nextYear today',
-            left: 'title',
-            // right: 'timeGridDay',
-          },
-          initialDate: new Date(),
-          initialView: 'timeGridDay',
-          navLinks: true, // can click day/week names to navigate views
-          businessHours: true, // display business hours
-          editable: true,
-          selectable: true,
-          events: [
-            
-            {
-    
-              title: 'Business Lunch',
-              start: '2020-12-03T13:00:00',
-              end: '2020-12-20',
-              color: '#b4ce66',
-              
-    
+            theme: true,
+            textColor: 'blue',
+            eventColor: 'black',
+            color: 'green',
+            buttonText: {
+                today: 'Today',
+                month: 'Month',
+                week: 'Week',
+                day: 'Day'
             },
-    
-            // areas where "Meeting" must be dropped
-            {
-              groupId: 'availableForMeeting',
-              start: '2020-12-11T10:00:00',
-              end: '2020-12-11T16:00:00',
-              display: 'background'
+            titleFormat: {
+                year: 'numeric',
+                month: 'long',
             },
-    
-            // red areas where no events can be dropped
-            {
-              start: '2020-12-24',
-              end: '2020-12-28',
-              overlap: false,
-              display: 'background',
-              color: 'yellow'
+            headerToolbar: {
+                right: 'prevYear,prev,next,nextYear today',
+                left: 'title',
+                // right: 'timeGridDay',
             },
-    
-            
-          ]
+            initialDate: new Date(),
+            initialView: 'timeGridDay',
+            navLinks: true, // can click day/week names to navigate views
+            businessHours: true, // display business hours
+            editable: true,
+            selectable: true,
+            events: [
+
+                {
+
+                    title: 'Business Lunch',
+                    start: '2020-12-03T13:00:00',
+                    end: '2020-12-20',
+                    color: '#b4ce66',
+
+
+                },
+
+                // areas where "Meeting" must be dropped
+                {
+                    groupId: 'availableForMeeting',
+                    start: '2020-12-11T10:00:00',
+                    end: '2020-12-11T16:00:00',
+                    display: 'background'
+                },
+
+                // red areas where no events can be dropped
+                {
+                    start: '2020-12-24',
+                    end: '2020-12-28',
+                    overlap: false,
+                    display: 'background',
+                    color: 'yellow'
+                },
+
+
+            ]
         });
-    
+
         calendarwire.render();
-        
-    
-      });
+
+
+    });
 
 }
-catch(e){
+catch (e) {
     console.log(e);
 }
 
@@ -430,16 +407,14 @@ catch(e){
 
 $(document).ready(function () {
 
-    try
-    {
+    try {
         new WOW().init();
     }
-    catch(e)
-    {
+    catch (e) {
         console.log(e);
     }
 
-    $(function() {  
+    $(function () {
         $("body").niceScroll({
             cursorcolor: "#b4ce66",
         });
@@ -461,48 +436,44 @@ $(document).ready(function () {
 
     });
 
-        try{
-            $("#example-basic").steps({
-                headerTag: "h3",
-                bodyTag: "section",
-                transitionEffect: "slideLeft",
-                autoFocus: true
+    try {
+        $("#example-basic").steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            autoFocus: true
+        });
+    }
+    catch (e) {
+        console.log(e);
+    }
+
+    try {
+        $(function () {
+            $('.skitter-large').skitter({
+                fullscreen: true,
+                dots: false
             });
-        }
-        catch(e)
-        {
-            console.log(e);
-        }
+        });
+    }
+    catch (e) {
+        console.log(e);
+    }
 
-        try{
-            $(function() {
-                $('.skitter-large').skitter({
-                    fullscreen: true,
-                    dots: false
-                });
-            });
-        }
-        catch(e)
-        {
-            console.log(e);
-        }
-
-        try
-        {
-            $('#example').DataTable({
-                "scrollX": true
-                });
-        }
-        catch(e)
-        {
-            console.log(e);
-        }
+    try {
+        $('#example').DataTable({
+            "scrollX": true
+        });
+    }
+    catch (e) {
+        console.log(e);
+    }
 
 
 
 
-        try{
-         // SmartWizard initialize
+    try {
+        // SmartWizard initialize
         $('#smartwizard').smartWizard({
             // theme: 'dots',
             // transitionEffect: 'slide',
@@ -515,78 +486,75 @@ $(document).ready(function () {
                 toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
             },
         });
-        }
-        catch(e){
-            console.log(e);
-        }
+    }
+    catch (e) {
+        console.log(e);
+    }
 
 
-        try{
-            // SmartWizard initialize
-           $('#smartwizard2').smartWizard({
-               theme: 'dots',
-               transitionEffect: 'slide',
-               transitionSpeed: '400',
-               toolbarSettings: {
-                   toolbarPosition: 'bottom', // none, top, bottom, both
-                   toolbarButtonPosition: 'right', // left, right, center
-                   showNextButton: true, // show/hide a Next button
-                   showPreviousButton: true, // show/hide a Previous button
-                   toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
-               },
-           });
-           }
-           catch(e){
-               console.log(e);
-           }
+    try {
+        // SmartWizard initialize
+        $('#smartwizard2').smartWizard({
+            theme: 'dots',
+            transitionEffect: 'slide',
+            transitionSpeed: '400',
+            toolbarSettings: {
+                toolbarPosition: 'bottom', // none, top, bottom, both
+                toolbarButtonPosition: 'right', // left, right, center
+                showNextButton: true, // show/hide a Next button
+                showPreviousButton: true, // show/hide a Previous button
+                toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            },
+        });
+    }
+    catch (e) {
+        console.log(e);
+    }
 
-           try{
-            // SmartWizard initialize
-           $('#smartwizardwire').smartWizard({
-               theme: 'dots',
-               transitionEffect: 'slide',
-               transitionSpeed: '400',
-               toolbarSettings: {
-                   toolbarPosition: 'bottom', // none, top, bottom, both
-                   toolbarButtonPosition: 'right', // left, right, center
-                   showNextButton: false, // show/hide a Next button
-                   showPreviousButton: false, // show/hide a Previous button
-                   toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
-               },
-           });
-           }
-           catch(e){
-               console.log(e);
-           }
+    try {
+        // SmartWizard initialize
+        $('#smartwizardwire').smartWizard({
+            theme: 'dots',
+            transitionEffect: 'slide',
+            transitionSpeed: '400',
+            toolbarSettings: {
+                toolbarPosition: 'bottom', // none, top, bottom, both
+                toolbarButtonPosition: 'right', // left, right, center
+                showNextButton: false, // show/hide a Next button
+                showPreviousButton: false, // show/hide a Previous button
+                toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            },
+        });
+    }
+    catch (e) {
+        console.log(e);
+    }
 
-        try{
-            $('.side-child2').click(function(){
-                $('.side-child').fadeToggle()
-            })
-        }
-        catch(e)
-        {
-            console.log(e);
-        }
-
-
+    try {
+        $('.side-child2').click(function () {
+            $('.side-child').fadeToggle()
+        })
+    }
+    catch (e) {
+        console.log(e);
+    }
 
 
 
 
 
-    $("#ken").click(function(){
+
+
+    $("#ken").click(function () {
         $("#admin").fadeToggle(300)
     })
 
-    try
-    {
+    try {
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar').toggleClass('active');
         });
     }
-    catch(e)
-    {
+    catch (e) {
         console.log(e);
     }
 
@@ -598,29 +566,25 @@ $(document).ready(function () {
     let savenote = document.querySelector('#savenote');
 
 
-    try
-    {
-        savenote.addEventListener('click', function(){
+    try {
+        savenote.addEventListener('click', function () {
             alert('save & new');
             newname.value = "";
             newnote.value = "";
         })
     }
-    catch(e)
-    {
+    catch (e) {
         console.log(e);
     }
 
-    try
-    {
-        closenote.addEventListener('click', function(){
+    try {
+        closenote.addEventListener('click', function () {
             alert('save & close');
             newname.value = "";
             newnote.value = "";
         })
     }
-    catch(e)
-    {
+    catch (e) {
         console.log(e);
     }
 
@@ -630,44 +594,44 @@ $(document).ready(function () {
 
 
 
-    $('#colorbtn').click(function(){
+    $('#colorbtn').click(function () {
         $('#input').fadeToggle()
     })
 
-    $('#funone').click(function(){
+    $('#funone').click(function () {
         $('#cardone').slideToggle()
     });
 
-    $('#funtwo').click(function(){
+    $('#funtwo').click(function () {
         $('#cardtwo').slideToggle()
     });
 
-    $('#funthree').click(function(){
+    $('#funthree').click(function () {
         $('#cardthree').slideToggle()
     });
 
-    $('#funfour').click(function(){
+    $('#funfour').click(function () {
         $('#cardfour').slideToggle()
     });
 
-    $('#funfive').click(function(){
+    $('#funfive').click(function () {
         $('#cardfive').slideToggle()
     });
 
-    $('#funsix').click(function(){
+    $('#funsix').click(function () {
         $('#cardsix').slideToggle()
     });
 
-    $('#funseven').click(function(){
+    $('#funseven').click(function () {
         $('#cardseven').slideToggle()
     });
 
-    $('#funeight').click(function(){
+    $('#funeight').click(function () {
         $('#cardeight').slideToggle()
     });
 
 
-    $('.searchtest').click(function(){
+    $('.searchtest').click(function () {
         alert("hello")
     });
 
@@ -675,75 +639,65 @@ $(document).ready(function () {
 
 
 
-    });
+});
 
-    let counter1 = 0;
+let counter1 = 0;
 
-    function countnum()
-    {
-        counter1++;
-        if(counter1 == 8)
-        {
-            clearInterval(counterone)
-        }
-        document.querySelector('#counter1').innerHTML = counter1;
+function countnum() {
+    counter1++;
+    if (counter1 == 8) {
+        clearInterval(counterone)
     }
+    document.querySelector('#counter1').innerHTML = counter1;
+}
 
-    let counterone = setInterval(countnum , 50);
+let counterone = setInterval(countnum, 50);
 
 
 
 
-    let counter2 = 0;
+let counter2 = 0;
 
-    function countnum2()
-    {
-        counter2+=200;
-        if(counter2 == 42000)
-        {
-            clearInterval(countertwo)
-        }
-        document.querySelector('#counter2').innerHTML = counter2;
+function countnum2() {
+    counter2 += 200;
+    if (counter2 == 42000) {
+        clearInterval(countertwo)
     }
+    document.querySelector('#counter2').innerHTML = counter2;
+}
 
-    let countertwo = setInterval(countnum2 , 1);
+let countertwo = setInterval(countnum2, 1);
 
 
-    
 
-    let counter3 = 0;
 
-    function countnum3()
-    {
-        counter3++;
-        if(counter3 == 8)
-        {
-            clearInterval(counterthree)
-        }
-        document.querySelector('#counter3').innerHTML = counter3;
+let counter3 = 0;
+
+function countnum3() {
+    counter3++;
+    if (counter3 == 8) {
+        clearInterval(counterthree)
     }
+    document.querySelector('#counter3').innerHTML = counter3;
+}
 
-    let counterthree = setInterval(countnum3 , 50);
-
-
-
-
+let counterthree = setInterval(countnum3, 50);
 
 
-    var elem = document.querySelector("#myframe");
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
+
+
+
+
+var elem = document.querySelector("#myframe");
+function openFullscreen() {
+    if (elem.requestFullscreen) {
         elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
         elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
+    } else if (elem.msRequestFullscreen) { /* IE11 */
         elem.msRequestFullscreen();
-      }
     }
-    
-
-
-    
+}
 
 
 
@@ -751,30 +705,34 @@ $(document).ready(function () {
 
 
 
-$('#btnscreen').on('click',function() {
-	if(document.fullscreenElement||document.webkitFullscreenElement||document.mozFullScreenElement||document.msFullscreenElement) { 
-		
-		if(document.exitFullscreen) {
-			document.exitFullscreen();
-		} else if(document.msExitFullscreen) {
-			document.msExitFullscreen();
-		} else if(document.mozCancelFullScreen) {
-			document.mozCancelFullScreen();
-		} else if(document.webkitExitFullscreen) {
-			document.webkitExitFullscreen();
-		}
-	} else { 
-		
-		if(document.documentElement.requestFullscreen) {
-			document.documentElement.requestFullscreen();
-		} else if(document.documentElement.webkitRequestFullscreen) {
-			document.documentElement.webkitRequestFullscreen();
-		} else if(document.documentElement.mozRequestFullScreen) {
-			document.documentElement.mozRequestFullScreen();
-		} else if(document.documentElement.msRequestFullscreen) {
-			document.documentElement.msRequestFullscreen();
-		}
-	}
+
+
+
+
+$('#btnscreen').on('click', function () {
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+    } else {
+
+        if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen();
+        } else if (document.documentElement.webkitRequestFullscreen) {
+            document.documentElement.webkitRequestFullscreen();
+        } else if (document.documentElement.mozRequestFullScreen) {
+            document.documentElement.mozRequestFullScreen();
+        } else if (document.documentElement.msRequestFullscreen) {
+            document.documentElement.msRequestFullscreen();
+        }
+    }
 });
 
 
@@ -782,13 +740,10 @@ let input = document.querySelector('#input');
 let searchbar = document.querySelector('#searchbar');
 
 
-input.addEventListener('keyup' , function(){
-    if(input.value != "")
-    {
+input.addEventListener('keyup', function () {
+    if (input.value != "") {
         searchbar.style.display = 'block'
-    }else
-
-    {
+    } else {
         searchbar.style.display = 'none'
     }
 })
@@ -803,249 +758,164 @@ input.addEventListener('keyup' , function(){
 
 
 
-box1.addEventListener( 'click', function(){
+box1.addEventListener('click', function () {
 
-    if (box1.checked == true)
-    {
+    if (box1.checked == true) {
         check1.style.display = 'block';
-    }else
-
-    {
+    } else {
         check1.style.display = 'none';
     }
 
 })
 
 
-box2.addEventListener( 'click', function(){
+box2.addEventListener('click', function () {
 
-    if (box2.checked == true)
-    {
+    if (box2.checked == true) {
         check2.style.display = 'block';
-    }else
-
-    {
+    } else {
         check2.style.display = 'none';
     }
 
 })
 
 
-box3.addEventListener( 'click', function(){
+box3.addEventListener('click', function () {
 
-    if (box3.checked == true)
-    {
+    if (box3.checked == true) {
         check3.style.display = 'block';
-    }else
-
-    {
+    } else {
         check3.style.display = 'none';
     }
 
 })
 
-box4.addEventListener( 'click', function(){
+box4.addEventListener('click', function () {
 
-    if (box4.checked == true)
-    {
+    if (box4.checked == true) {
         check4.style.display = 'block';
-    }else
-
-    {
+    } else {
         check4.style.display = 'none';
     }
 
 })
 
-box5.addEventListener( 'click', function(){
+box5.addEventListener('click', function () {
 
-    if (box5.checked == true)
-    {
+    if (box5.checked == true) {
         check5.style.display = 'block';
-    }else
-
-    {
+    } else {
         check5.style.display = 'none';
     }
 
 })
 
-box6.addEventListener( 'click', function(){
+box6.addEventListener('click', function () {
 
-    if (box6.checked == true)
-    {
+    if (box6.checked == true) {
         check6.style.display = 'block';
-    }else
-
-    {
+    } else {
         check6.style.display = 'none';
     }
 
 })
 
-box7.addEventListener( 'click', function(){
+box7.addEventListener('click', function () {
 
-    if (box7.checked == true)
-    {
+    if (box7.checked == true) {
         check7.style.display = 'block';
-    }else
-
-    {
+    } else {
         check7.style.display = 'none';
     }
 
 })
 
-box8.addEventListener( 'click', function(){
+box8.addEventListener('click', function () {
 
-    if (box8.checked == true)
-    {
+    if (box8.checked == true) {
         check8.style.display = 'block';
-    }else
-
-    {
+    } else {
         check8.style.display = 'none';
     }
 
 })
 
-box9.addEventListener( 'click', function(){
+box9.addEventListener('click', function () {
 
-    if (box9.checked == true)
-    {
+    if (box9.checked == true) {
         check9.style.display = 'block';
-    }else
-
-    {
+    } else {
         check9.style.display = 'none';
     }
 
 })
 
-box10.addEventListener( 'click', function(){
+box10.addEventListener('click', function () {
 
-    if (box10.checked == true)
-    {
+    if (box10.checked == true) {
         check10.style.display = 'block';
-    }else
-
-    {
+    } else {
         check10.style.display = 'none';
     }
 
 })
 
-box11.addEventListener( 'click', function(){
+box11.addEventListener('click', function () {
 
-    if (box11.checked == true)
-    {
+    if (box11.checked == true) {
         check11.style.display = 'block';
-    }else
-
-    {
+    } else {
         check11.style.display = 'none';
     }
 
 })
 
-box12.addEventListener( 'click', function(){
+box12.addEventListener('click', function () {
 
-    if (box12.checked == true)
-    {
+    if (box12.checked == true) {
         check12.style.display = 'block';
-    }else
-
-    {
+    } else {
         check12.style.display = 'none';
     }
 
 })
 
-box13.addEventListener( 'click', function(){
+box13.addEventListener('click', function () {
 
-    if (box13.checked == true)
-    {
+    if (box13.checked == true) {
         check13.style.display = 'block';
-    }else
-
-    {
+    } else {
         check13.style.display = 'none';
     }
 
 })
 
-box14.addEventListener( 'click', function(){
+box14.addEventListener('click', function () {
 
-    if (box14.checked == true)
-    {
+    if (box14.checked == true) {
         check14.style.display = 'block';
-    }else
-
-    {
+    } else {
         check14.style.display = 'none';
     }
 
 })
 
-box15.addEventListener( 'click', function(){
+box15.addEventListener('click', function () {
 
-    if (box15.checked == true)
-    {
+    if (box15.checked == true) {
         check15.style.display = 'block';
-    }else
-
-    {
+    } else {
         check15.style.display = 'none';
     }
 
 })
 
-box16.addEventListener( 'click', function(){
+box16.addEventListener('click', function () {
 
-    if (box16.checked == true)
-    {
+    if (box16.checked == true) {
         check16.style.display = 'block';
-    }else
-
-    {
+    } else {
         check16.style.display = 'none';
     }
 
 })
-
-
-
-try{
-    let searchInput = document.querySelector('.search-input');
-let searchOutput = document.querySelector('.search-output');
-
-searchInput.addEventListener('keyup' , function(){
-    if(searchInput.value != "")
-    {
-        searchOutput.style.display = "block"
-    }else
-    
-    {
-        searchOutput.style.display = "none"
-    }
-
-    
-});
-}
-catch(e){
-    console.log(e);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
