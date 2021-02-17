@@ -21,7 +21,6 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
@@ -758,7 +757,7 @@ input[type=checkbox]
 {
 
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     color: var(--varcol1);
 
@@ -774,7 +773,7 @@ input[type=checkbox]
 .sale-p
 {
     margin-left: 7px;
-    font-size: 30px !important;
+    font-size: 25px !important;
 }
 
 .achev-head
@@ -789,6 +788,30 @@ input[type=checkbox]
 {
     font-size: 60px;
 }
+
+.word-bomb
+{
+    width: 60%;
+}
+
+.num-bomb
+{
+    width: 40%;
+}
+
+.num-bomb p
+{
+    color: #b4ce66 !important;
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+.gray-bomb
+{
+    filter: grayscale(100%);
+}
+
+
 
 
 
