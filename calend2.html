@@ -7,24 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>leadGuarntrn</title>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/maincalender.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/datatables.css">
+    <link rel="stylesheet" href="css/maincalender.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.steps.css">
+    <link rel="stylesheet" href="css/smart_wizard.css">
+    <link rel="stylesheet" href="css/smart_wizard_all.css">
     <link rel="stylesheet" href="css/dist/table.css">
 
-
+    <!-- Font Awesome JS -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
 
 </head>
 
-<body  id="test">
-
-
+<body id="test">
 
 
 
@@ -58,7 +61,7 @@
                     </div>
 
                     <div class="search-child2">
-                        <input  id="input"  class="form-control search-input" type="search">
+                        <input  id="input"  class="form-control  search-input2" type="search">
                     </div>
                 </div>
 
@@ -114,7 +117,7 @@
 
     <div  class="wrapper mt-5 pt-4">
         <!-- Sidebar  -->
-        <nav id="sidebar" >
+        <nav id="sidebar" class="">
 
 
 
@@ -183,26 +186,18 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <div class="row ">
-                <div class="col-md-12 ">
-                    <div class="head-wire p-2">
+            <div  class="container">
+                <div  class="row">
 
-                        <div class="row">
-                            <div class="col-md-12 m-auto">
-                                <div class="text-center achev-head">
-                                    <p> Achievements </p>
+                    <div style="overflow: auto;" class="col-xl-10 m-auto py-3 bg-white ">
 
-                                </div>
-                            </div>
+
+
+
+                        <div  id="calendar">
+
                         </div>
 
-                        <div class="row ">
-                            <div class="col-md-8 m-auto ">
-                                <div class="video-header">
-                                    <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/XCqeYYRgAcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
 
@@ -210,477 +205,13 @@
             </div>
 
 
-
-
-
-            <div class="parent-bomb my-2 p-3">
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >50</p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >42</p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >30</p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >15</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >20</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >25</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >30</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >82</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >22</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >35</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >40</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >10</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >60</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >40</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >41</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >30</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >25</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >32</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >10</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >15</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >20</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >40</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >10</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >60</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >40</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >41</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >30</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="child-bomb gray-bomb">
-                    <div  class="d-flex justify-content-center">
-
-                        <div  class=" word-bomb ">
-                            <p class="new-p" >New <br> <span class="sale-p" >Sales</span></p>
-                            
-                        </div>
-
-
-                        <div class="num-bomb">
-                            <p >25</p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                
-
             </div>
-
-
 
 
             <!-- div content -->
 
         </div>
     </div>
-
-
-
 
 
 
@@ -992,11 +523,14 @@
     <!-- Bootstrap JS -->
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
 
+
     <script src="js/maincalender.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/datatables.js"></script>
+    <script src="js/dist/calend.js"></script>
+    <script src="js/dist/table.js"></script>
     <script src="js/dist/lead.js"></script>
 </body>
 

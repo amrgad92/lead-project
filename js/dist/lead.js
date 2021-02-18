@@ -181,6 +181,79 @@ $(document).ready(function () {
     })
 
 
+    $(function(){
+        
+        var calendarwire = document.querySelector('#calendarwire');
+        
+        
+    
+        var calendarwire = new FullCalendar.Calendar(calendarwire, {
+          theme: true,
+          textColor: 'blue',
+          eventColor: 'black',
+          color: 'green',
+          buttonText:{
+              today:'Today',
+              month:'Month',
+              week:'Week',
+              day:'Day'
+          },
+          titleFormat: {
+            year: 'numeric',
+            month: 'long',
+          },
+          headerToolbar: {
+            right: 'prevYear,prev,next,nextYear today',
+            left: 'title',
+            // right: 'timeGridDay',
+          },
+          initialDate: new Date(),
+          initialView: 'timeGridDay',
+          navLinks: true, // can click day/week names to navigate views
+          businessHours: true, // display business hours
+          editable: true,
+          selectable: true,
+          events: [
+            
+            {
+    
+              title: 'Business Lunch',
+              start: '2020-12-03T13:00:00',
+              end: '2020-12-20',
+              color: '#b4ce66',
+              
+    
+            },
+    
+            // areas where "Meeting" must be dropped
+            {
+              groupId: 'availableForMeeting',
+              start: '2020-12-11T10:00:00',
+              end: '2020-12-11T16:00:00',
+              display: 'background'
+            },
+    
+            // red areas where no events can be dropped
+            {
+              start: '2020-12-24',
+              end: '2020-12-28',
+              overlap: false,
+              display: 'background',
+              color: 'yellow'
+            },
+    
+            
+          ]
+        });
+    
+        calendarwire.render();
+        
+    
+      });
+
+    
+
+
 
 
     
@@ -306,53 +379,53 @@ $(document).ready(function () {
 
     });
 
-    // let counter1 = 0;
+    let counter1 = 0;
 
-    // function countnum()
-    // {
-    //     counter1++;
-    //     if(counter1 == 8)
-    //     {
-    //         clearInterval(counterone)
-    //     }
-    //     document.querySelector('#counter1').innerHTML = counter1;
-    // }
+    function countnum()
+    {
+        counter1++;
+        if(counter1 == 8)
+        {
+            clearInterval(counterone)
+        }
+        document.querySelector('#counter1').innerHTML = counter1;
+    }
 
-    // let counterone = setInterval(countnum , 50);
-
-
+    let counterone = setInterval(countnum , 50);
 
 
-    // let counter2 = 0;
 
-    // function countnum2()
-    // {
-    //     counter2+=200;
-    //     if(counter2 == 42000)
-    //     {
-    //         clearInterval(countertwo)
-    //     }
-    //     document.querySelector('#counter2').innerHTML = counter2;
-    // }
 
-    // let countertwo = setInterval(countnum2 , 1);
+    let counter2 = 0;
+
+    function countnum2()
+    {
+        counter2+=200;
+        if(counter2 == 42000)
+        {
+            clearInterval(countertwo)
+        }
+        document.querySelector('#counter2').innerHTML = counter2;
+    }
+
+    let countertwo = setInterval(countnum2 , 1);
 
 
     
 
-    // let counter3 = 0;
+    let counter3 = 0;
 
-    // function countnum3()
-    // {
-    //     counter3++;
-    //     if(counter3 == 8)
-    //     {
-    //         clearInterval(counterthree)
-    //     }
-    //     document.querySelector('#counter3').innerHTML = counter3;
-    // }
+    function countnum3()
+    {
+        counter3++;
+        if(counter3 == 8)
+        {
+            clearInterval(counterthree)
+        }
+        document.querySelector('#counter3').innerHTML = counter3;
+    }
 
-    // let counterthree = setInterval(countnum3 , 50);
+    let counterthree = setInterval(countnum3 , 50);
 
 
 
