@@ -87,6 +87,18 @@ $(document).ready(function () {
             });
     });
 
+    $(function() {
+      $('#example2').DataTable({
+          "scrollX": true
+          });
+  });
+
+  $(function() {
+    $('#example3').DataTable({
+        "scrollX": true
+        });
+});
+
 
 
     
