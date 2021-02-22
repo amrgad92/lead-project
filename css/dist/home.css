@@ -375,7 +375,7 @@
 
 .input-login-style
 {
-    padding: 22px 5px;
+    padding: 20px 5px;
     outline-color: #9ca6af;
 }
 
@@ -478,6 +478,8 @@ i:hover
     border: 2px solid yellowgreen;
     color: white;
 }
+
+
 
 
 /* ------------------- */

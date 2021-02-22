@@ -1,9 +1,4 @@
 
-
-
-@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css";
-@import "https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css";
-
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #d6dce2 !important;
@@ -1099,6 +1094,64 @@ div.dataTables_info {
 
 
 /* ========== */
+
+
+/* profile */
+
+.wrapper-profile
+{
+    margin: 10px;
+}
+
+.prof-img
+{
+    width: 120px;
+    border-radius: 5px;
+}
+
+.prof-name
+{
+    font-size: 18px;
+    color: #121212;
+}
+
+.prof-name i
+{
+    font-size: 11px;
+    background-color: rgb(35, 97, 212);
+    color: white;
+    padding: 3px;
+    border-radius: 50%;
+    
+}
+
+
+.btn-hire
+{
+    background-color: #d6dce2;
+    color: #ffffff;
+}
+
+
+.prof-info
+{
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========= */
 
 
 
