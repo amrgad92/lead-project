@@ -26,22 +26,22 @@ $(".toggle-password").click(function() {
   });
 
 
-//   let address = $("#addressp").offset().top;
-//   $(window).scroll(function(){
 
-//       let top = $(window).scrollTop();
+  $(window).scroll(function(){
+
+      let top = $(window).scrollTop();
       
-//       if( top > address )
-//       {
-//           $(".navbar").css({"backgroundColor":"#007cba"} );
+      if( top > 10 )
+      {
+          $(".navhome").css({"backgroundColor":"#007cba"} );
       
-//       }
-//       else
-//       {
-//               $(".navbar").css({"backgroundColor":"transparent"} );
+      }
+      else
+      {
+              $(".navhome").css({"backgroundColor":"transparent"} );
       
-//       }
-//       });
+      }
+      });
 
 
 

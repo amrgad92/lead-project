@@ -1138,6 +1138,25 @@ div.dataTables_info {
     height: 100px;
 }
 
+.progress-prof
+{
+    padding-top: 60px;
+}
+
+.progress-bar
+{
+    background-color: #73afeb;
+}
+
+.line-prof
+{
+    width: 100%;
+    height: 1px;
+    background-color: #d6dce2;
+    border-radius: 5px;
+    margin: 25px 0 25px 0;
+}
+
 
 
 
