@@ -97,32 +97,32 @@ $(document).ready(function () {
     $('#example3').DataTable({
         "scrollX": true
         });
+  
+});
+
+$(function() {
+  $('#example4').DataTable({
+      "scrollX": true
+      });
+
+});
+
+$(function() {
+  $('#example5').DataTable({
+      });
+
+});
+
+$(function() {
+  $('#example6').DataTable({
+      });
+
 });
 
 
 
     
-    $(function() {  
-        $("body ,html").niceScroll({
-            cursorcolor: "#b4ce66",
-        });
 
-        $(".tableBodyScroll").niceScroll({
-            cursorcolor: "#b4ce66",
-            cursorfixedheight: 40
-        });
-
-        $(".num-parent").niceScroll({
-            cursorcolor: "#b4ce66",
-            cursorfixedheight: 40
-        });
-
-        $(".num-head").niceScroll({
-            cursorcolor: "#b4ce66",
-            cursorfixedheight: 40
-        });
-
-    });
 
     $(function() {
         new WOW().init();

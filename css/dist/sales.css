@@ -1426,6 +1426,101 @@ table
         color: blueviolet;
     }
 
+    /* sms */
+
+    .sms-parent
+    {
+        width: 350px;
+        height: 500px;
+        position: absolute;
+        right: -150px;
+        background-color: white;
+        border-radius: 10px;
+        display: none;
+        padding: 10px;
+        overflow: auto;
+        
+    }
+
+    .sms-child
+    {
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+        overflow: auto;
+    }
+
+    .imgsms
+    {
+        width: 100%;
+    }
+
+    .imgsms img
+    {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .imgsms p
+    {
+        color: #000;
+        font-size: 16px;
+    }
+
+    .imgsms small
+    {
+        color: rgb(139, 91, 91);
+    }
+
+    .sms-content
+    {
+        background-color: #98a1ad;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+
+
+    .imgsms2
+    {
+        width: 100%;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .imgsms2 img
+    {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .imgsms2 p
+    {
+        color: #000;
+        font-size: 16px;
+    }
+
+    .imgsms2 small
+    {
+        color: rgb(139, 91, 91);
+    }
+
+    .sms-content2
+    {
+        background-color: #98a1ad;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+
+    .sms-parent textarea
+    {
+        margin: 5px;
+        resize: none;
+    }
+
 
 
 
