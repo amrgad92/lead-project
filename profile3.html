@@ -277,14 +277,13 @@
 
 
 
-
-                    <div class="col-md-8 p-2  ">
+                    <div class="col-md-8 p-2 ml-auto ">
                         <div class="bg-white per-head px-2 py-3">
                             <div class="per-info">
 
                                 <div class="row ">
                                     <div class="col-md-6">
-                                        <h5>Personal Information <br> <small class="text-muted">Update your personal informaiton</small></h5>
+                                        <h5>Account Information <br> <small class="text-muted">Change your account settings</small></h5>
                                         
                                     </div>
         
@@ -296,36 +295,51 @@
 
                             </div>
 
+                            <div class="row my-3">
+                                <div class="col-md-10 m-auto ex-alert-parent rounded">
+                                    <div class="d-flex justify-content-center">
+                                        <div>
+                                            <div class="ex-circle">
+                                                <i  class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="alert-text font-weight-bold config">Configure user passwords to expire periodically. Users will need warning that their passwords are going to expire,
+                                                <br>or they might inadvertently get locked out of the system!
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <i class="fa fa-times text-muted " aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="row per-info2">
                                 <div class="col-md-12 text-center">
 
-                                    
-                                    <h4 class="py-3">Customer Info</h4>
-
-                                    <img class="img-perinfo rounded my-3" src="css/images/testimonial-4.jpg" alt="">
 
                                     <form class="py-3" action="">
 
                                         <div class="form-group row">
-                                            <label class="col-xl-3 col-lg-3 col-form-label text-right">First Name</label>
+                                            <label class="col-xl-3 col-lg-3 col-form-label text-right">Current Password</label>
                                             <div class="col-lg-9 col-xl-6">
-                                                <input class="form-control  form-control-solid" type="text" value="Nick">
+                                                <input class="form-control  form-control-solid" type="password" placeholder="Current password">
+                                                <span class="form-text text-info forgot text-left"><a href="">Forgot password ?</a></span>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-xl-3 col-lg-3 col-form-label text-right">Last Name</label>
+                                            <label class="col-xl-3 col-lg-3 col-form-label text-right">New Password</label>
                                             <div class="col-lg-9 col-xl-6">
-                                                <input class="form-control  form-control-solid" type="text" value="Bold">
+                                                <input class="form-control  form-control-solid" type="password" placeholder="New password">
                                             </div>
                                         </div>
 
-
                                         <div class="form-group row">
-                                            <label class="col-xl-3 col-lg-3 col-form-label text-right">Company Name</label>
+                                            <label class="col-xl-3 col-lg-3 col-form-label text-right">Verify Password</label>
                                             <div class="col-lg-9 col-xl-6">
-                                                <input class="form-control  form-control-solid" type="text" value="Loop Inc.">
-                                                <span class="form-text text-muted text-left">If you want your invoices addressed to a company. Leave blank to use your full name.</span>
+                                                <input class="form-control  form-control-solid" type="password" placeholder="New password">
                                             </div>
                                         </div>
 

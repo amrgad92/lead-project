@@ -1158,8 +1158,69 @@ div.dataTables_info {
 }
 
 
+/* ================ */
 
 
+.img-james
+{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.james-parent
+{
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-info-child
+{
+    transition: all 0.5s;
+
+}
+
+.profile-info-child :hover
+{
+    background-color: #d6dce2;
+}
+
+.per-info
+{
+    border-bottom: 1px solid rgb(216, 208, 208);
+
+}
+
+.per-info2 input
+{
+    background-color: #d6dce2;
+    height: 37px;
+}
+
+.icon-prof-input
+{
+    background-color: #d6dce2;
+}
+
+.icon-prof-input:focus
+{
+    background-color: #d6dce2;
+}
+
+.per-info2 input:focus
+{
+    background-color: #d6dce2;
+}
+
+.per-head
+{
+    border-radius: 5px;
+}
+
+i
+{
+    cursor: pointer;
+}
 
 
 
@@ -1173,6 +1234,114 @@ div.dataTables_info {
 /* ========= */
 
 
+/* password */
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slidecheck {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slidecheck:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -6px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slidecheck {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slidecheck {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slidecheck:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slidecheck.round {
+    border-radius: 34px;
+  }
+  
+  .slidecheck.round:before {
+    border-radius: 50%;
+  }
+  
+
+
+.ex-circle
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.ex-circle i
+{
+    padding-top: 7px;
+    font-size: 40px;
+    color: #F64E60;
+}
+
+.ex-alert-parent
+{
+    background-color: #FFE2E5;
+    padding: 10px;
+}
+
+.config
+{
+    color: #F64E60;
+}
+
+.forgot
+{
+    font-size: 16px;
+}
+
+
+.marg-check
+{
+    margin-top: 13px;
+}
+
+
+
+.form-check-style
+{
+    width: 14px;
+}
 
 
 
